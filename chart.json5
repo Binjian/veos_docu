@@ -1,0 +1,8 @@
+```jscharting
+{ 
+    type:'column',
+    series:[{
+        points: [ ['A',5], ['B', 6] ]   
+    }]
+}
+```

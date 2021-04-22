@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="671.1351px" preserveAspectRatio="none" style="width:1033px;height:671px;" version="1.1" viewBox="0 0 1033 671" width="1033.994px" zoomAndPan="magnify"><defs><filter height="300%" id="fc7woz9hoir6t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.5375375375375375"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="3.075075075075075" dy="3.075075075075075" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ae7709657f611b622ade1638c535e86e]
+cluster cluster--><rect fill="#FFFFFF" height="483.5556" rx="9.6096" ry="9.6096" style="stroke:#326CE5;stroke-width:1.1531531531531531;" width="507.3874" x="360.5526" y="124.9249"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="41.5135" x="593.4895" y="137.8799">K8集群</text><!--MD5=[f216046ecab24c219e7087ccc116a849]
+cluster nsFrontEnd--><rect fill="#FFFFFF" height="132.997" rx="9.6096" ry="9.6096" style="stroke:#FF4216;stroke-width:1.1531531531531531;" width="114.5465" x="370.5465" y="147.2192"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="66.1141" x="394.7628" y="160.1742">Front End</text><text fill="#000000" font-family="sans-serif" font-size="9.2252" font-weight="bold" lengthAdjust="spacing" textLength="70.7267" x="392.4565" y="171.6381">[Namespace]</text><!--MD5=[0e77cd041dc5ea57a52568fb2d3c6599]
+cluster nsBackEnd--><rect fill="#FFFFFF" height="216.024" rx="9.6096" ry="9.6096" style="stroke:#FF4216;stroke-width:1.1531531531531531;" width="209.8739" x="651.9159" y="147.2192"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="62.2703" x="725.7177" y="160.1742">Back End</text><text fill="#000000" font-family="sans-serif" font-size="9.2252" font-weight="bold" lengthAdjust="spacing" textLength="70.7267" x="721.4895" y="171.6381">[Namespace]</text><!--MD5=[3efe97de2e45cf3e5829f2b697df6a6e]
+cluster nsUtil--><rect fill="#FFFFFF" height="216.024" rx="9.6096" ry="9.6096" style="stroke:#FF4216;stroke-width:1.1531531531531531;" width="106.8589" x="374.7748" y="286.3664"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="94.5586" x="380.9249" y="299.3213">Utiliy Services</text><text fill="#000000" font-family="sans-serif" font-size="9.2252" font-weight="bold" lengthAdjust="spacing" textLength="70.7267" x="392.8408" y="310.7853">[Namespace]</text><!--MD5=[0c4c38a7da9dc46e8b4ba610ab20de4c]
+entity KubernetesApi--><rect fill="#FFFFFF" height="92.961" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="122.2342" x="366.7027" y="508.9249"/><image height="50.7387" width="53.8138" x="374.3904" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAAE1UlEQVR4Xt1aS44UMQzltLlCX2GuMFcYtuxGYsuGBWukXiDEAglGLBBigRSsvC63y3ZSjqt6BPNkjVrpfPxi+yVV06/qi8Mr3fD/4+aUHj/+KK/PsLu3X55+/dE9jsYNKUky0k5vPr3//FP3Pg43ofTw4Ztl8mzEjqRESXX/7qv1fmwUTD3RPhxDichQnVh340aB1ZNmsZfS+ftvSiHrYs4oyPv1I0+JKuFAMtJ2CmOGEpGxfhxuRIxSQK8dwBylni7fzhLCGKKUk7IDbYrYBqX9UlZaClF4D9mUiOKPKO0nQzRkPdAGRU7hTRvXWJfSTj5jOabN3qmWg8l9SjTAzhI0isNgPYk9xwBtmZ5ugU8pJ9O5GwBlUS4j9EQLfEpTpUw7nSMjkSDWywWfkh3vGpGJSFAcU8R6IpGnNBuZ3qZaBO+NvXJyKNGMdrwyWlIPGwJ7zzJIsR3fd4KZr4c1OJQiR8dsiNxdJ1a634LgzUsPa3Ao2ZHW4tcTgLzn+zVfrwZ1GDxF3DgnKcULozb/bKISw/G+uIFV5iaLpnR4IaHWbSmTN7ZRIlJOrieaUiSJx64oYLNt2cDjwVQRT4pXTppSJNyDhLEJyWIjR3EuuNsMBMvJrqgp2THW7CwAlNolzOlHe08k8ZnM7cyI7K/VmBWlyMbIfUVuwDNOfbsGICPjKpVFrpxWlCLpK6tCnmDUjk215YFu/ECBKJV+tBkRf4oppxWlyP1K6iaiygdOXUJBLTKpsNkIDhnv/SaliPzaeVaUbG9rtspVFvHWcjx7jypyVA92lDVVkFdKkUIqwg9+gOMWADxP4gUIR4ki/CheQqDqqP9AJCKJo06IK6XeXkqTtciNKu6IEv5Sf64f2acaX3tJmCinK6WIvMjSp89wSzbi7kPtUjmsYACs0fShRylRTldKtp81u9lI19NyznBPpBOc7kk2nwH6izWsG9Zk6s5RcpfnFKJvWaBBA7HqRQCp3iMMRMoBS/OQC6VgfIt3kiI4MoDsJb7qOb0ZpbhXRZTThZJM/U2zLlrJehLvnG26AhxeHFn669iFiI1HXSjZHgMbVDNDKZX1WHWwmxKRb2m8RIZS8W5WCogS+c0iQbGiVamdL4S4drjnklSaoPEkSUplWAMKvZLohTp4FinTUcrNYqXCBVO6W/8LwwZHdp41nuEq4rO5C3PdUuCbBLdgLSsbOKntKpsma3V1bc1N18sfCWIuV0VFie8vyDmgkmVFCVeBWYsIYAQJSSheSa8o1Wwqq7twAlMHI5srvJpSzUqFLYw4grcea3qiBodSzeZAUAAVcnlR+jXsU6rZSsUj+pTlFnLVBehSqqnz93lsnOQjSjkBDBq5lZOETSkaUao7CvdG5kqcwgalmpLXU3uXcm6vuPiiQIZGTPjQXvPbsWPTznnYplTn70qo+7L8tKk0McQHbPOp/ZN3drN6EqcQolTnBfChvd+isKAgJYFzezs5S2kgcQpRSnVGAGn5x/a6GE9ExVDClTxOaSxxChOU4mfi0/JjKrhS9iXepsQpTFCq4bvSffs1FJ5eoQdIwoQ8RCROYY5STQlgWSfelAUlQWKaUp0XwJKlJB+x4shQqvMCmLDcJbimKd30rlQmJU4hSQlI5NKmnTqvKePYRenfxAuk9BcJDRk2+sDk1QAAAABJRU5ErkJggg==" y="516.6126"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="377.4655" y="577.3416"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="106.8589" x="374.3904" y="591.2973">Kubernetes API</text><!--MD5=[967c2b1a156e498aabfdc089710fb9a5]
+entity ingress--><rect fill="#FFFFFF" height="92.961" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="102.2462" x="376.6967" y="180.6607"/><image height="50.7387" width="53.8138" x="384.3844" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAAEZUlEQVR4Xt1aO45UMRDc084V5gpcgStASrYSKckGxEgTIESABCsChAiQTGt66enXn3LbzzOCLVUAD9uvy+4u99vlrj073NkH/z+uLun+w/fD6xPzxdvPjz9/2xGrcUVJWozm8c3Hh08/7Oh1uIqkV++/eiU3E7ZSEiXVy3dffPSYdJh2oX1YI4nEUJ34cOukg7WLzmKvpNO3X5RCPsQ50iHv9495SVQJC8Vo7jTGGUkkxsexnCSMUsC+u4AxSZkv72d24BPGWJI0Z2VDpLjBfg0J60jab2VFcsRds6k4PpJ0GzFMOQTaRKyKiGsslXRLPQclidHNc2CJsSSa4Fe5Kn2p4K6KNJvxgliSsWlanZI45NBhUhy0VMhw1/FtYUf/RSzJnHv4PkYl9Zkk3k4uAKyfRRVLKk5mULH69xlSWHgRjDAXMpNYIKkVruDs9XX40srKKZDkd70rqUWvFPrSn4PPQDvijECSD64iqSXpUbkcu8gqyo47I5DkZxYlNbeRWW4MAfhemM+LJZkLrT4xg08ZzfDD0UryheSJ7Utvambc3Mtphvvd7SFoop3jJXW9i5nFytCL+NwLC8NYyGO5XdazGFaSf1lGH6uG3mDjEOErtKRuP67p88VK8nMAsZvpbZaIs1ySAcU0EfoYNpJMcVcY1gDDJBiNBLXOkjLBgL6cNpJGd4jpj16gzQbn0mgHrGleupE0t6jfJ425bRqi2dONJD+6SGyAIN+W0LjlRdJEIWmGt55g7vyLNBt6kQT6jiJxe4prCf9rl/pFF0kTbnM475CxNbX4BjgLaDv25Kcup4skP67L47kz0rHyE1nTACQCnzAYgKkTZJckOZNKX8fIDFBiCtulLnUr8ySp0q0amsrRaVPvlbLVJuxE5j5JGs3j0N9AX2fgI/bWMhqSTHyS5EdoUqyaoR6GzhkfpYCyi3/WJQwrMMvSkFIFJUnh+0KYIOoTM9S7ctnBlZJ8QeJeqYjH2reTPSV8xBVJmVNhA6wjNBVNGXkxcbATFUlgOqi9IYRbxtRX/KZtzeZ0JXW3EFhFBVkKMI27biTpPkATS8JJKwS9EgZ2CH8HbiS1qMQPUFK9hcG9Uga8X6H9WEktWoXqxFxNQv8awOP2B12a4Rl217cTzggktcJay2mKrWLc2ZnHklpuFVeiloSLx483SCW13v27lhJipTjxrYAkZQbY5cP4/8VhSZVWtXt3I0mttmdLSC/qFs8hsTiDjqRW2zlDPiXyGDJP+jPVhmwNPaG/3o//6pppg4vQl9RgsxOSgmbfl1ufHYye8L3Hmz3qq5nFGZQktUEDFElyOPyETkbOnJ4MSQIWZ1CV1EYMcLkkbHEGA5LCXilkJoki4ydDide1OIMBSS3qlUJqe+AnYgZiDyzSzzWsWJzBmKQ2ZYBCik+m4+8FYdESNIYltXED1GRPP8HfNQlPUS/bxYykNmiAczQfdnVMSprulYocsjiDSUmMSvKMMvt2qmOXpH8Tz1DSH+E+zWvy5oAdAAAAAElFTkSuQmCC" y="188.3483"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="387.4595" y="249.0773"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="86.8709" x="384.3844" y="263.033">API Gateway</text><!--MD5=[44ccef60e15179d22224788d26a16676]
+entity KubernetesBE1--><rect fill="#FFFFFF" height="84.7928" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="658.0661" y="184.8889"/><image height="50.7387" width="53.8138" x="665.7538" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="192.5766"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="668.8288" y="253.3056"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="658.8348" x2="726.4865" y1="255.8438" y2="255.8438"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="658.8348" x2="726.4865" y1="257.3814" y2="257.3814"/><!--MD5=[d26c81e8063e85c9846abdf066c0b492]
+entity KubernetesBE2--><rect fill="#FFFFFF" height="84.7928" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="786.4505" y="272.5285"/><image height="50.7387" width="53.8138" x="794.1381" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="280.2162"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="797.2132" y="340.9452"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="787.2192" x2="854.8709" y1="343.4835" y2="343.4835"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="787.2192" x2="854.8709" y1="345.021" y2="345.021"/><!--MD5=[bd8a9e5af5656a8574fa183470054648]
+entity KubernetesBE3--><rect fill="#FFFFFF" height="84.7928" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="786.4505" y="180.2763"/><image height="50.7387" width="53.8138" x="794.1381" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="187.964"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="797.2132" y="248.6929"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="787.2192" x2="854.8709" y1="251.2312" y2="251.2312"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="787.2192" x2="854.8709" y1="252.7688" y2="252.7688"/><!--MD5=[e5c2b2444253aa59b0a973db469ff769]
+entity KubernetesUtil1--><rect fill="#FFFFFF" height="84.7928" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="393.2252" y="319.4234"/><image height="50.7387" width="53.8138" x="400.9129" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="327.1111"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="403.988" y="387.8401"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="393.994" x2="461.6456" y1="390.3784" y2="390.3784"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="393.994" x2="461.6456" y1="391.9159" y2="391.9159"/><!--MD5=[f3a525c75b59866f7326cb54619eb095]
+entity KubernetesUtil2--><rect fill="#FFFFFF" height="84.7928" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="393.2252" y="411.6757"/><image height="50.7387" width="53.8138" x="400.9129" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="419.3634"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="403.988" y="480.0923"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="393.994" x2="461.6456" y1="482.6306" y2="482.6306"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="393.994" x2="461.6456" y1="484.1682" y2="484.1682"/><!--MD5=[4c1e08cdd755b1b0a4ecd778f9df98d2]
+entity devopsAlias--><ellipse cx="427.8198" cy="38.0541" fill="#FEFECE" filter="url(#fc7woz9hoir6t)" rx="6.1502" ry="6.1502" style="stroke:#A80036;stroke-width:1.1531531531531531;"/><path d="M427.8198,44.2042 L427.8198,64.961 M417.8258,50.3544 L437.8138,50.3544 M427.8198,64.961 L417.8258,76.4925 M427.8198,64.961 L437.8138,76.4925 " fill="none" filter="url(#fc7woz9hoir6t)" style="stroke:#A80036;stroke-width:1.1531531531531531;"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="42.2823" x="406.6787" y="90.711">DevOps</text><!--MD5=[e999feef62467acdb5d8333daafe60b0]
+entity clientalias--><rect fill="#FEFECE" height="24.8288" style="stroke:#000000;stroke-width:1.1531531531531531;" width="72.2643" x="19.2192" y="216.4084"/><rect fill="#FEFECE" height="24.8288" style="stroke:#000000;stroke-width:1.1531531531531531;" width="72.2643" x="16.1441" y="213.3333"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="59.964" x="22.2943" y="229.4737">Client Apps</text><!--MD5=[416a10cdbe5ad3f3424edc8029f2a448]
+entity helmalias--><rect fill="#FEFECE" height="24.8288" style="stroke:#000000;stroke-width:1.1531531531531531;" width="76.8769" x="189.8859" y="522.3784"/><rect fill="#FEFECE" height="24.8288" style="stroke:#000000;stroke-width:1.1531531531531531;" width="76.8769" x="186.8108" y="519.3033"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="64.5766" x="192.961" y="535.4437">Helm Charts</text><!--MD5=[ede78735b8ea7b87f9875cd829ff5599]
+entity aad--><rect fill="#FFFFFF" height="112.9249" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="97.6336" x="541.2132" y="5.3814"/><image height="53.8138" width="53.8138" x="548.9009" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAAEiUlEQVR4XsWZMY4VMQyG95K5wlyBK3AFStqlpUOipdmCFqQtEKJAghUFQhRIwfu8m83Y8W8n44FfFto3M8nkS+w/eY+r+q/0/O0XeekcXckL5+jFu6/l5Ydnrz/JGyfoXyBdv/9GPBzEJm9n63Skm88/Gw/Hm48/5EOpOhfp9vvv7dWtQKIgTvlonk5Euvv1Z8hDQdeJVjZI0olIZAYapqciZtkmQ2chkWVrDBEnGeApSL3F4TjDAPORyND00EGkG2AykmVxOHINMBMJWByOXAPMRMIWhyPRANOQIhaHI8sAc5D4VHo8UgwwAcm1OEoqWkNydgoaNK634wZ4FEmfSkUQhmxz2bgA2EEDPITkWjYYHN2y2h60inUk17LdwgCHDLKKZap1JNeyI2MCk7L8xX4RybW4oCNj63fXeagVJJAwLYJz7E7NggFOI7kWx5GyShzAY4aaQ3ItrgU9JhuPFOlt9gQ4geRanAg3Z9w9usWUAU4guRYnwi2n+JpHemuKIkWSfmEEwcrkCBpgCClicda7KbtEJVBvfU5Ode4mc40gxTOeoz/Ucdve/Vr29j7mWnkfrgE6SFPpXvY8/fS33toV4WPxxHYNECEdsTgx8XyxRyrqeBq3H3yuRUhT78CJxNcFUtnn5NQMgq3cRFrOhGFDvqWRyt5LpvLcMsAxkp5mKyI8BSKVfQVO2frQAAdIcYvrc5r+AInKz1hIZe9jU7auDVAigUkiAFq99vtBf0jBPCWAJFa7pcl2+d2COrcSUhvgDslKZbo4XGKW1aqP9qS+1UL4GM2dsDUaw/BFouETEjAcvbhNEZ4SQyrQx1jW6/qGT0hW5ljGwgoaCT/sIhXvddUu9dbwAQmMTGSqUGSUZQYpct4dLlR5dM57JOAwW+CbnPWCPvjJCJK7StXeKsqlRq6AxZX/gRRZJZBTNJgrcJtD9qdkFaHuxEXa9gcrS3gS7xPPKjgOYN9Nlr224McwEq0POIw24dFSET3Yg2WOJZZ79bIHgAXnZyyk4OJUb5zcyW5fslKoPyj0zxOD8EP6OOyk3dW3tB/QTFMn2mlv4M/o7Xl5ILLMhNrQm6hTakn/Xnf/9UBjcrd5vi6Q9LjFtNJgqCsKhuzb9iEyViJV6OlWbJfjX98v/d3PDl9sSDxB7WEWWAQQepEHSHW1dz1Q6odnlz8y0tAGQB1asRknzzFSVTkQDw3WPlKfehCg4kH0xSNkIlWVPFNhTaHQQpIXw66aEBJrISVaAKrlLNDFI+Qj1ZGDRcL9pjCLFFz5EFJdynj39VPrD4pHKIpU51PFPRDECwkXj9AEEis+tVlIkbN5r2mkGh6K3kyFInbqZq/WClKN7cXYHu7snzo4tvBZVmgRqcZKCywUXqKp4hFaR2LhkZXRNuLu4LPFI3QUqQYMY3v8TZOChovzDSxsUAlIdXUvFrFcPEI5SHVpL+7jSPEIpSHVmGEM42DxCGUisdzSEqH946Dykar3I06LrOIROgWpBvbi+DF0VmchVVhaw+/qWToRiaV31fTiETodqXbH3OB3uIP6C34Rr7S8Y7YuAAAAAElFTkSuQmCC" y="13.0691"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="551.976" y="76.8731"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="541.982" x2="638.0781" y1="79.4114" y2="79.4114"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="541.982" x2="638.0781" y1="80.9489" y2="80.9489"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="30.7508" x="548.9009" y="92.4767">Azure</text><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="82.2583" x="548.9009" y="105.0053">Active Directory</text><!--MD5=[c130e0e2966a032f810834e1f13275a8]
+entity acr--><rect fill="#FFFFFF" height="88.3483" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="192.1922" y="555.0511"/><image height="46.1261" width="53.8138" x="199.8799" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA8CAIAAABU9Vt0AAAEiElEQVR4Xu2aPW4bMRCFdcm9gq6gK+gKKtM6bToDadO4SJsAKoIgRYDESBEEKQLIT3zWaDQz/NVKggMPXmFxl1x+5MyQ3PVid549fP199/HH+v235dstNL35xD9QsvnwHVdthcvbwha02eOff+gxGaoC3vbnX9vExawbCTDoou93Vat3X64D1od0//mX72uX4KW20bmtAwme5rs4IEyXbXpWa0Uac7acQAUHts+YyZqQ5uWhOFcAgzNj/vEIlEBMlSgcZq4jwft9h2ZRNWGCcGAZqCAhR/knXVm9YBUkNOefcRO1p8oSEsbGNz0sBowvbxeq2y5GVkKaa4rQFYl15oPhlluoskh4tm+xV4UdA9qHL1UzhFfVA7NIZyY69BWzYRuNDMy9bLlhomWRzvF7P5DoBGYM/S5sz1He+NDy/iOL1DVsIvTYLJGA8R1F48DODXYLW67uroDkWynLnyB4APF3amG8wRZuFBhsuUSClm2Fg8VIXbkhXAoRSF3zjEZysRcGG37a+w52LpJv2sP4FQm9zKVy3OkHiIZa+twZzu0uROo65Gkk5gB9VVYk44F6mQq9q5pIClctUu+OQSPpchNaOSTpVuhdbD8XbDk7QRo4tHokCS3mOl4KkcS9cZsEkvEuEYOthe2INMAzOSRhENflzzISZRJmjk3zh/aMtB09RBgkya1yA3+2I9H9dKgU2MJwekbyAdqoSyBJidmFhEsw+fUM75F6U4LWFZCYSPVuI8fGRLJHGp6i6VpIUiKxSkNQebbFcBRRt0JikpB29Pq+0E0M6FZIUiK7cpmuhZ+4Lt0caTo84ojkk2OXqki5UMadxkFeDFK7uIDOgKSvDShE8vHJDHufXqwWEuzy8JGKGkSad5Z8a+FpanfYp67TtzbfrNTlQEhJE1JhzFpkkLTMol4w5IkH9TXRP0Uk+U0XsuSIZHJRrzwSfUwKxTDYKEfXme4KxnWm4KIm37DWEWlsAy7SSOtoH7lNm05fC93dpC8U1ZncpiPwJtq5UhypI9LOOUyXNJI2s6JXJYR+UIxVg3CP5EexXR7pIZ2i/Z1dWqZv8lVHlSDULrpHMqt4lzTSXXTSltv0T8yGREuuiqneQkgXfT4v+ZWkUT49aEl0hRsibegN7mzkLIfi8aCeSy9leaRl9HInRHpMr4cYPx4SJRx1Rk65e5rwiIQmymMTyiDJUsj0IMtIDkkXcrzv0xGIqCGnTGYuQ5y8IUKF8mB4GaSN2+PxZzuSDgGubyjXnsYGNS2dVnpu3+PtOr9ZXAdJSsQL+JNpgyUn65K39iXltkgUSypINAaDruz1wpBojEi0jm6Fkjunl4LUbtMr0itSCWmrvgP9D0hGMyOtDv/oIA/gpbmQuObqWvrSOm075kSSpUw/lZfGkNbpH9lyDJPa2rFB2pxIj9EndF5qQeKJowAwnZ4yTp6tbE4kmo7U6fCGKETSHlUQt/bhOSK0+ZFowChsqVa1E1F1Kgp2KSRa115xnT5GNE5FwS6LRNMRr7VKbx7D8985dg2kXcoE63Ri64qKMXsCQ7TS9xYfSvoAAAAASUVORK5CYII=" y="562.7387"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="202.955" y="618.8551"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="27.6757" x="199.8799" y="632.8108">ACR</text><!--MD5=[20afe2c8757f50ab87c26545fd011497]
+entity cosmos--><rect fill="#FFFFFF" height="100.3964" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="78.4144" x="950.967" y="160.6727"/><image height="53.8138" width="53.8138" x="958.6547" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAAFlklEQVR4Xs2aMY7bSgyGfUlfYa+QK+QKKl+7adMNkDbNFmkTYIsgSBEgWaQIHl4RQKHFmP5FcjickWy/Hyx2JVnDb8ghx7IOc0sv//7Wh+6t5x//lU8/p/ffXr/7yvb44bv4eVhf7Ojpyy996E4iEsJ4ePN8/Oeja8Q5Z5BoAvShm4t8ffX2s2WwRthtJJqVOwaKYGxY6AiFi04RABm5R7nHp+iPBhJ9gK/TJ64vC8Mk5JK+dJFc1kAS+tqNriEaS6UZwfA6CSQfiZA4RGy3CRRVLZnEPAyrjUR3V3G/dp0g18dgWOKtj2R52LrGyMsGh9aMvqglmQgHifLN5RkeLBbVK7w/DT2wbuUmuuLRvdRsudabErG4gfKdh3Nb7kCOHSjohEj3CiJTM+Ln5qBHMKJRmhur5gWBxCW6ySVK2LCaxoGqOUHHuQPSNTWjs7WP90qyjorebDdEdqW6MOpTIt5Qdtl2NinfvMvRSCzKQwvDPLXh45i4RqPQGhAb23ZJ8yTf+IiPNJsucTyH1WogMsXwsOF3hKQkp6S0VJFmKCNBfAaCw2Z5BsKF+xs5GCHN0JKLWT9EaB1NmhsitGKGcyWrCKt/A6ks6SdpKtrCUxJI05KEalAl7NF4vIE0LyW/rOdsjIdcRLMM1koYq1oGtZFo/alVZN2NLQngWqlQSU22GdRGUjftrQdbeNjs7oSmWFLO1pI2Et6xt15v52EDd07Cr+Xq1JxBQlmnY7POjVmBTCnQMN2+0oF0+5QTk+zClCuVZdaBZJ2ObS8krObSiNyUY2WRelfRjkjig1S5WsqxskjW46btgiSu497HVjlUCmm4t1oXuwxdl8Y6mQKolEIayDo262XeCqx+qdq2sVqlkIrZzpBZAGvDgcKSgEvItl2rFJIdEse2JNupZGjcm5ZK1VZqI9FCskOiNal6waQkYBeaWktI1Ebih1KxZaiShjxSEoIuZLUP0rSs5u2G3Ua6aqYkoHZD2h4o5MESh8f3KQ+3QUJfJ3jmgcfVZTW1kZrlYTsSOoolu0CJe1oeCe+DNIdFHJHy/QoNtwgFvjio1sSjxFsh1m5IaF1gMgq2oAlKdoFdyG5R6uoqYtZ7ZTjlyIMlm47jPeV4oBSSum/eLIbLg7ts5LGVSU4FSiElK4S1WgZi/iAPPqO2PGX7hogmUsYeyz0XKcPjTmLwtQ9VReL91XSO9V65hzy4frClujxYAGNVkaR/yxE7TMZ24ZlytY7lIxXvwdJAoDDxMG3w/s184/vINU05SJxybGW9Iu1gsQnSFp4pvYpYDtJ03mLZ38iCUV2zPLjfSfKoaW1KI2EJcucmn34cIvzsBPtR7D8Bz5TrRSiN5P4IpVQSz0no42o/hr9qX49nVkiS5c1vXcV7wCJW1sWNnMY3t3CybD9Fc9OkqRVS7UcoV8/1J2HoyvP69R288zV4ZkSSENmqUNOLeWSpkg2bz3H9fS5ek02e4IILksylcisWUqluOK1/kMezpb4aMYyBgsv+Ig2ECEXu4rSpxUN/49mn5fuphXnseekhWO1/kcSDrhC5ojvg4pnWVevp/COV1BKGye935nOnqQXqhPRy3i4E6Ek9rt/UURNkF14XiYgDUPP2hDRtfh1uXmYuSDa+QCyfYFY4a+4jyxOS5MnwSCo4Ktl2lBrIpTq9YsjnanGMpSrBsZ7iG6WyAO1h/XL+QWrdwNSqObMvfWwXNwmsNzV7WF4UJPKDLKSuWmeHuVJwRHZENGwAB9lNJouPTYBrBKcm3PuyPZi36i5ITbcojAqG/k1OxI5CKnf9X5CCxLNB58TV191KcYk+yBJXWyFelzbQx23taxfxbrjmxqWICxiZuxDvGxklu4REp1YrdbxmBPn/gWHVQjTLttXWMZqG18vL+rXJuK+CsvQHJ4sa0LlXSPgAAAAASUVORK5CYII=" y="168.3604"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="961.7297" y="232.1644"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="951.7357" x2="1028.6126" y1="234.7027" y2="234.7027"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="951.7357" x2="1028.6126" y1="236.2402" y2="236.2402"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="63.039" x="958.6547" y="247.768">Cosmos DB</text><!--MD5=[b82fbc1cbe149444533860e68a8569af]
+entity keyvault--><rect fill="#FFFFFF" height="112.9249" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="63.8078" x="958.2703" y="28.4444"/><image height="53.8138" width="48.4324" x="965.958" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABGCAIAAAD0ENuBAAAEaUlEQVR4XtWbPY6UMQyG55K5AlfgCnuFLWmXlm4lWpotaEHaAiEKJFhRIESBFDzjbzMZO37t+Msi9pULfvLzxLGdTGb3UFfr7vPP63dfr95+efnm04vX92T0B/rr7ccfD7/+yNb7dJD/sEM3778Ra3n1ARgt4/77b9kzqzX05FeXuzfaHDlESgvoyeWazzUKp/2BtJeevKjJgkbbtXMBu+hzXu+NdkAOOqM8PdUWTZOwPTmQpye3aZRmFBVUXoiMzG2Zjp8kPXA80VAJEu2pSoI1pN2fpCe/aojiVRIrxWnBsmlMSXpNwBAAnWUtmzZTNg0oQ2+FDZUg2VSJQkh3LNngydBbhdJ1PGuYALQnsl1AIXrKwn5nh+Ebj93h4nOF36dn1v5qNaSPTz+kF4unKSI76dC3Xf7HvufbtXsbRfR9gPb0w+nL0rjnNu4CTHoxR19PnqLmiL7tvo0XMKbXVbn3DflYT88zue7XI7P1eyvGB8MO6IeBIcJ6uPtl0VlLJU4P2zdokvTWzpbLsmMFT1lxzxnuz/A4k/TxOUDLsu+O2YJemL5NXNAPY6afpm8MdmnKRL7qsGmm4+dMTw6wFl2M3MerjZgGsnKDTSz1TI+76V1j4V7YNDoLRJoIs40eO36YMU25BYDqRJsMYHr3b/QgBkS4D7X8PSfIs9GDuXX5s3TjvaVxIdL5MxQYqiEd6UH1sEITyHIbcVuhMhQoPu3gP9KDwI07vsk6yCK3ICHL/S14jvRuoyktpLe2sTzWwIN15SqB3BpqIb3LdrAmK3aNx7IGTNBXu/ZzQh7A7kwlWdNaeisnOaoPwwtd+++E1tKDykPOPVhbk3uiqKvpQTWniUz6XMrW1fQgcY/0VrnMTVZX01fj1bGczqJnTE8DPmN65Pv/JO4rpn/eWWvV++DtkiqaMOv4y9FbvihMjw8zV7qjZTl6yxeFTytwmEU+RuheluXordDYbgrgMIvMp3tZFhlNyyoq2y3NbYGle1mWoAdBz6Md6a3dKYHg0V0sS9ADsDv+dFLhPc69q+kuls3Sg1p58ckQtCveLV+3t2yW3iqGpTuLthcRsEfY/bQ2YdZOTtGDWlK6eN7oQX6UyY+I1lBT9NYNoFzWkvM7JujwQj1SA+2nBzFTLh9pzvTWrGyR6smyxgnSW93ZxA3gTF+h+4uXAE3W9BF6/P5aVAxf0LudIwvgxNXmHh1ENjv7BX2FtyI28HK9R7feK/Qw9yR99eKHB5qqQq5wmrL1ydo0oH+A30Q0u479KAGWGy1tLtnzpAF9DSQAG7WhSMutgbjdTWbT4d40pq926RgaTUDtI8vgD18R17DhSm3S1/C2islol4nv9vQjPWRccK5PP1edGA17BNHX1AJWGQiYJoe+el/SP5FZaSrk07MiRW2JTZXjKH2dqRJpu5r8Zm6CnjVVMeJGfnGvElrT9KyFa+BqKyeIKUnPujv9ikluGeTs9EnXtIu+ic+gq8fflNGs5fGLclpt8FyL6C9wSO4/v2pT4AAAAABJRU5ErkJggg==" y="36.1321"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="969.033" y="99.9362"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="959.039" x2="1021.3093" y1="102.4745" y2="102.4745"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="959.039" x2="1021.3093" y1="104.012" y2="104.012"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="30.7508" x="965.958" y="115.5398">Azure</text><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="48.4324" x="965.958" y="128.0683">Key Vault</text><!--MD5=[e9b9a1fb5c2eb8b368965da252d1b6d4]
+entity alb--><rect fill="#FFFFFF" height="112.9249" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="69.1892" x="192.1922" y="170.6667"/><image height="53.8138" width="53.8138" x="199.8799" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAAEAUlEQVR4Xs3bPW5UMRAH8L2kr7BX4ApcgZI2tHQr0dKkoCVSCoQokAClQIgC6Z/JOvE6ng+P7XHEaBRFb/3G81tv3vNbKQdsjuuvv19/+HZ8d0v56v2Xq08/fv351w4KjUN7IDQIk95+bpJsp5u7dmhcbCSJnpK0XO0JQbGLZHu2qraQPJ59qniS37NJFUzSPHRJ0F4KV0WStKbJQ5dyGvDm43f+argqjNT15HgBVQzJ6cmxWxVAGvLk2KpaJU14cuxTLZGmPTk2qeZJi54cO1STpBBPjnDVDEnz5CZuf/6tkz9K0JFmjF2wOb0bwyRjejF5T/TUxIcZySvYMUYa9YgNjZLEIkYMkCY8SepmgpSkOlp4SXOeJLUyR0pSKTFcpGlPkvqYJiWpGo8+acWTpCZWSEkq2ESHtOhJUgeLpCTVrMMirXuSNP06KUllS6ikEE+S5g4hJalyDpmkeWi/ww9qSYOvpC8iTzd3oyptXlElkDQP9UHd8ONi0s6NY+qgraDWKE9jMFe1JMODcx/8JZ7Nl6lkoxMpaTvXHHcuFw2mc52qZyTbAx+pnoDGN01TW80CelR5pFN1IXU9cJCoSBlM0/ABOamzsmJGoyVLTWNwUT2SPB44SOXtNzw5a1V38KUDh+qBpD2ENR70SGWJCMZf5Vnqd8dfOjiHoaIOD1qX3APp6a3OskTae8SzPALTL3RR0fLSwVNoKjp4ED9yoscf4mRiEr492R2a6sCPLnoo+DRa1peTiRBVAmlxGrwgiT7qvP+DeFtYnIlPo+WWD572pyyq/v/LA+VBXLucXKVdHpvxNB9/leeOizjVfLgvnfTNaKOySZS3T3fP7kLVt9ru4EsHpoeO07vzuHsw7t+1qkuqBxuNHqsvZY0WS5aa1/qWvLxHlz2eR9Ulpec7SFp/3gFVK+vj3IyX2Xm1nPWaP9uJd1UeUmK7fZqMbHSQftZ7cKcnnUlOD/jzkq0y/ur44Lp7HuICamkMbjzgJJgqra6YR/ZolOM0/qCuJfdAJMFUjWbzIYTvmc+TogcaCXGqTSTNA4OEINUOkuGBTUKEKpxke9AlYVkVS+p64CFhTRVI8njgJGFWJTYRWEoMLwnjrRzPm8i2yjn8t+xSyunBEAmDqrIxFcNfasiDURLcrfBnLR6evcioBxMk+FSePrp1JjyYI8HRTXuCFPa+fs6DaRJ6qna0FAZp2oMVEkyVpyHt9BUPFknQ2/J8myXecxc9WCdBURk3pRzirWndgxASFBUtgqYSn7pDPIgiQVEd2X+MEFL85ijKg0ASFFVOWjFKvjLhHsSSYKq0jPUgnIRBVbgHO0hwq3Z4sIkEh2qTB/tIMFX7PNhKgnL/Me5XIXEP3m2COEQxg7gAAAAASUVORK5CYII=" y="178.3544"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="202.955" y="242.1584"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="192.961" x2="260.6126" y1="244.6967" y2="244.6967"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="192.961" x2="260.6126" y1="246.2342" y2="246.2342"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="25.3694" x="199.8799" y="257.762">Load</text><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="46.1261" x="199.8799" y="270.2905">Balancer</text><!--MD5=[95e797a9df3a2e6815f040e8c1644678]
+entity sql--><rect fill="#FFFFFF" height="112.9249" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="75.3393" x="952.5045" y="269.0691"/><image height="53.8138" width="49.97" x="960.1922" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABGCAIAAAAckG6qAAAEd0lEQVR4Xu1au67UMBDNT+YX8gv5hf2FW9JCS3clWhoKWpBugRAFEqwoEKJAyj3rQ4bZGdubxySh2KMRungde45nPB5P0gzTcP71593nn48ff7x8/+305kv/+hOke/UEaV984B9sxK8Pb7+iG/o/ff9tB9oAjW1QgAZQGjpR0WVCbqRkJwhChgOWHFNiYq/QSgEfmCjcOFccoD3m8HNrJcRVYCIKfUwEP6FD3XpYoECz/ONQ0h7aQK1li8ddVLIqGpcNa3DhgJn8HFhFLCp+sk8sBV3UGIez2K4zceHgCcAmtmMQsuu1kkaDtTEjwnlsr2j4rbLGqRo/HFjZXtHAMplJ11i+MWO1yUcDt4EHltwv3BrjZziQRmDs04DrewJtilG262TkOci4UaEJa++DkpnLPjMZNQ56Avgr+ECViZQkv6ofdnoKO8RkTOLghVkQMzwRtkzR2MsBHMLlzsENd4jcObjhDpE7BzfcIXLn4IY7RO4c3HCHyJ2DG04LizEUn8zxV6S0pWIMs8ApieAmHKCTT7N1/cbfHn15Sn5CHu6n0BLPoXQzlAJC5c6tiwzSeAAHXWVg1ZVXU+pn5mN5T7fIlV9aDuCge4gr896DP/RVW5xHm0409i0l2ZYDvVwz0T/pp7T1zDgHcMgW3uhImoPRTNuHnEs9vcRzaAu7Ftz0ZFh4/Yhm/l9w4LjeICZk6cAvviQ+Jt0O4KAPLKM0/qv9HiTZTdtNGqXlAA6YkqX2U3r5oB/g2axbhrTw+m/hrxsxpoifcRMOtmOCLLA/wgVyOLTX8U3Dz7gTB11s7HIFWV8MNh0EfsZ4DhyUyVwpn2vHnE9vD5Mv9WPOZ0SP8DC+CFZazUORw3SBHtldXhE8Ar0rDjkLARxa98oCi5q1G3tKkMAjIAw79GNy3qV0BradVW+P4dBe3zROqX7s+/Tji1Cdv/BBepTx21Mu//cI43BTJCIzNnAnlF7DyfsKbbcSduIgBBh5xSB1yKXKn0gae3CQ3UIC/gJYB4NEJfjuwYFLzhW96RhZ8GgvWWNzDlx1KjHXAhrM/H0OOoRz6NNnPv61HXenblkAhmDbGsihV5/CgABoML3jdbwtLOEs8LrivTGGgzgJlM6eDNn1WwCePKYxgAMX5jx+TMKITgvQCDy/zMTLQJOauJz5XmOW0ALMWLuID3nqOKcbopmlYcxeJvQQXnq668xvO7RuSzRcQq/fFOF6MMPZh8CQQpyJ0ZdvsKZky15ohFKs2A5MbHXL3+/5KtlySTgQ00894tbI24GQBGui0JG6XIlgO3BP2/2g/zMk35DMvi480fyIm0JqIr2qfVkOgsdbn+0woWhdpNsUPG1EMbpAkYNAzilzADMQtfvaQYNZIGjc5mAguRCzOr/D9gRpzOZgQLPa1h2B2ddy4Nmypjq0EvDwtRyGclq/D2I41C+Km4KBMYDDoK7tU8pBgeChHMNhGD++7dLlYYf8T7IK/BvGYUjjSibfjR+PbiSchWE9kgNxHquoJ1W6DJcHVSN8Br5KRYKUx+eZAAAAAElFTkSuQmCC" y="276.7568"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="963.2673" y="340.5608"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="953.2733" x2="1027.0751" y1="343.0991" y2="343.0991"/><line style="stroke:#FFFFFF;stroke-width:0.7687687687687688;" x1="953.2733" x2="1027.0751" y1="344.6366" y2="344.6366"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="42.2823" x="960.1922" y="356.1644">External</text><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="59.964" x="960.1922" y="368.6929">data stores</text><!--MD5=[5c010680c7f8678827d6b3cef51a20f2]
+entity ado--><rect fill="#FFFFFF" height="108.5646" style="stroke:#FFFFFF;stroke-width:1.1531531531531531;" width="96.8649" x="5.3814" y="545.0571"/><image height="53.8138" width="53.8138" x="13.0691" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAADqklEQVR4Xu2ZPY4TQRBGfSeu4Cv4Cr6Cr7AZKYSkJiWzREpCgAiQQNoAIQIkQBsgRIA0FFProl1fT3X1786iLT2tVvZMd72p8ky7vZn+u9joF+5/PCjdh3hQqovrb79OH24a8v3nbz3HMCWa++mrL4cXH5tDl0nNNUKJfK5efsZsmnB881VNN0KpU30YGly1X3cl6njMoyGjlajR+7UcM1rJ03L759cIHrbEUCWj5dAhCQ4yWsloOUzXCQ41VAlbDlMsg4carcQth9lE4bTo8SJrAvqfKoxHRhmhJC2H0yN0JC5zRMwzyAglbjmcG6Ej0USRLFd3pZO75Yz6hCRr1VeJWw5njRJ+eGwoaTxd6Ktkzx1CFx5TN8ARhEUlejUXqonw+tOPZIeoPDBvA2PkuJJxgp+sQXKVjH6mt7QSjb579r4SnMmmrxLmVwDOZJOrZLRAFyWcJknD20N7JZzDSaub+IqUnIUiczw3pJnS9sm7XYUPk1xAeB4MbZTIh8DRC6CEljrQ48Mj1Cqxz666RCEsFmLctfHcKqUePpVUKbFPWct5WqiMQiWRKSvR1XkTAt+q54i7rSggGkqm0qeTFa2Y00pKIwRHXILllU9zK1yGR5RQQ3CWiMfZL/j4b2VJoj63Sph9FBxUIddlv7Dn1srnMK88tMo5vEp2icI685RR5EgcwQ8VB39TCmNDdwwUWKfPYS5OtNnC+PutNmmFozOhjNOn2CpZHInbvQfDaimDYT4HX3Ek/u0Q0WVAn2iJlEyWT66YvzgSF5teUSvMBpNDE9snPHeJQ2ZxJPQ+Xq5Vjc8SZcWR0EoU9PRQSvw8ic6NJpU+h9LiSESUpksrfkjTNaPJwrl7+BC4ss6NuNJ0tqK/8kpo1cmHr2CQRUksKk3znV29Qlby2Y2CWTqRpsBJc8NSigZvCUTBRJ2En9vRSlQl3hho5RPK3IESfWppPup1Qllhrh7QZ7SS+CgrzDUJmtyN0mneyw05zluhmLEB5/3o8VuUaaZE391D9PuXEVrxA5FO8VuxjOHTRul4uSeo34dgq/ABz3d2FMiVuTMlCiwmri2iPutVisZp/hXIkPH4rEiJmpCqtL1csysfp1hxDhJtlHhBGKaLGkkZpjgHCa1UsAoWHxvMPsoqlI7zvgU6ICiArEJpyrFKshalqZ3VipSmRlbtldQPpoge4DLqrdorJdEDQBzrrDxT2NFeaaqzck5hRBelqcIKF5C50UtpyrfattgeovgDLXi3TGR7zyEAAAAASUVORK5CYII=" y="552.7447"/><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="0" x="16.1441" y="616.5488"/><text fill="#000000" font-family="sans-serif" font-size="12.3003" font-weight="bold" lengthAdjust="spacing" textLength="37.6697" x="13.0691" y="630.5045">CI/CD</text><text fill="#000000" font-family="sans-serif" font-size="10.7628" lengthAdjust="spacing" textLength="81.4895" x="13.0691" y="643.3956">Azure Pipelines</text><!--MD5=[c79e221fe7a993491bb77a069782906f]
+link devopsAlias to aad--><path d="M449.026,61.8859 C471.2986,61.8859 507.1879,61.8859 537.1836,61.8859 " fill="none" id="devopsAlias-to-aad" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="541.1864,61.8859,534.2675,58.8108,537.3425,61.8859,534.2675,64.961,541.1864,61.8859" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="19.988" x="505.0811" y="58.8622">认证</text><!--MD5=[a311ba0f3881fcf9e24403d993cde898]
+link helmalias to KubernetesApi--><path d="M266.9856,537.5992 C294.3466,540.6334 331.1696,544.717 362.6774,548.2112 " fill="none" id="helmalias-to-KubernetesApi" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="366.6898,548.6562,360.152,544.8372,362.8694,548.2325,359.4741,550.9499,366.6898,548.6562" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="79.952" x="273.6817" y="536.2676">helm upgrade</text><!--MD5=[0e22aeb91ee08dfa6b695474847f443b]
+link aad to keyvault--><path d="M638.9407,69.946 C665.3744,74.3022 692.6607,78.7988 692.6607,78.7988 C692.6607,78.7988 692.6607,78.7988 821.045,78.7988 C821.045,78.7988 904.3798,81.8291 954.0563,83.6356 " fill="none" id="aad-to-keyvault" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="958.1634,83.785,951.3609,80.4603,954.3221,83.6452,951.1372,86.6063,958.1634,83.785" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="758.7748" y="75.7752"/><!--MD5=[ced187d95b6eaf2a4c67640fade33425]
+link KubernetesApi to aad--><path d="M483.0768,508.8667 C486.6978,505.8149 488.9369,503.9279 488.9369,503.9279 C488.9369,503.9279 541.2132,212.5646 541.2132,212.5646 C541.2132,212.5646 556.9004,164.1443 570.4894,122.2003 " fill="none" id="KubernetesApi-to-aad" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="571.7136,118.4218,566.6556,124.056,570.5288,122.0785,572.5063,125.9516,571.7136,118.4218" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="30.7508" x="495.8559" y="234.9103">RBAC</text><text fill="#666666" font-family="sans-serif" font-size="9.2252" font-style="italic" lengthAdjust="spacing" textLength="38.4384" x="495.8559" y="245.8303">[ASYNC]</text><!--MD5=[879ace1580263b468782d5d2e572c43c]
+link clientalias to alb--><path d="M91.5597,227.1712 C120.0781,227.1712 159.0946,227.1712 187.8903,227.1712 " fill="none" id="clientalias-to-alb" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="192.0622,227.1712,185.1433,224.0961,188.2183,227.1712,185.1433,230.2462,192.0622,227.1712" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="28.4444" x="125.3093" y="213.3848">HTTP</text><text fill="#666666" font-family="sans-serif" font-size="9.2252" font-style="italic" lengthAdjust="spacing" textLength="38.4384" x="125.3093" y="224.3048">[ASYNC]</text><!--MD5=[775f93c8c195199b8ce394b959b83591]
+link alb to ingress--><path d="M261.5746,227.1712 C292.0895,227.1712 336.9963,227.1712 372.4471,227.1712 " fill="none" id="alb-to-ingress" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="376.5024,227.1712,369.5834,224.0961,372.6585,227.1712,369.5834,230.2462,376.5024,227.1712" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="28.4444" x="294.4384" y="213.3848">HTTP</text><text fill="#666666" font-family="sans-serif" font-size="9.2252" font-style="italic" lengthAdjust="spacing" textLength="38.4384" x="294.4384" y="224.3048">[ASYNC]</text><!--MD5=[fc5d5e073f1d589132ace0d0e06790a4]
+link ingress to KubernetesBE1--><path d="M479.1978,227.1712 C530.3038,227.1712 607.5775,227.1712 653.7877,227.1712 " fill="none" id="ingress-to-KubernetesBE1" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="657.8853,227.1712,650.9664,224.0961,654.0415,227.1712,650.9664,230.2462,657.8853,227.1712" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="591.952" y="224.1475"/><!--MD5=[e9b48ffe10b6f046e0cfe228f1749991]
+link KubernetesBE1 to KubernetesBE2--><path d="M727.3247,268.2134 C734.9014,277.1842 740.7087,284.0601 740.7087,284.0601 C740.7087,284.0601 740.7087,284.0601 772.997,284.0601 C772.997,284.0601 777.1313,286.706 782.9745,290.4456 " fill="none" id="KubernetesBE1-to-KubernetesBE2" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="786.381,292.6258,782.211,286.3061,783.1435,290.5538,778.8958,291.4863,786.381,292.6258" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="758.7748" y="281.0364"/><!--MD5=[243d9c094b6e5e5f187a58ee6faa3aac]
+link KubernetesBE1 to KubernetesBE3--><path d="M727.3247,225.5073 C734.9014,225.1436 740.7087,224.8649 740.7087,224.8649 C740.7087,224.8649 740.7087,224.8649 772.997,224.8649 C772.997,224.8649 776.8308,224.6808 782.3324,224.4167 " fill="none" id="KubernetesBE1-to-KubernetesBE3" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="786.381,224.2224,779.3226,221.4828,782.5416,224.4068,779.6176,227.6259,786.381,224.2224" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="758.7748" y="221.8412"/><!--MD5=[4c663772d95233f58879f49a34024bda]
+link KubernetesBE2 to sql--><path d="M855.679,317.0148 C882.4837,318.7205 919.7159,321.0899 948.2121,322.9033 " fill="none" id="KubernetesBE2-to-sql" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="952.3508,323.1666,945.6411,319.6583,948.5147,322.9225,945.2505,325.796,952.3508,323.1666" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="911.3754" y="315.631"/><!--MD5=[13ba91c10f2d2dc9615c2761618665db]
+link KubernetesBE3 to keyvault--><path d="M855.679,194.3791 C884.6781,170.7844 925.8821,137.2594 955.0247,113.5478 " fill="none" id="KubernetesBE3-to-keyvault" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="958.1611,110.9959,950.8535,112.9774,955.1795,113.4219,954.7351,117.7479,958.1611,110.9959" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="69.1892" x="874.8589" y="119.595">Pod Identity</text><!--MD5=[8e2a3851f17e14f9f2e72c721ea8e774]
+link KubernetesBE3 to cosmos--><path d="M855.679,220.1971 C882.0231,218.401 918.4395,215.918 946.7355,213.9888 " fill="none" id="KubernetesBE3-to-cosmos" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="950.8493,213.7083,943.7371,211.1112,947.0143,213.9699,944.1557,217.2471,950.8493,213.7083" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="0" x="911.3754" y="211.8472"/><!--MD5=[58e6d3e16ad324d442f938da6784bef3]
+link ado to acr--><path d="M102.4567,599.2553 C129.489,599.2553 162.6652,599.2553 187.9461,599.2553 " fill="none" id="ado-to-acr" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="191.9335,599.2553,185.0146,596.1802,188.0897,599.2553,185.0146,602.3303,191.9335,599.2553" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="70.7267" x="109.1652" y="596.2316">docker push</text><!--MD5=[2deaba208717c1be79ac5241a36e1dd7]
+reverse link acr to KubernetesApi--><path d="M265.3674,590.8457 C294.0325,584.5975 333.7101,575.9489 366.6765,568.763 " fill="none" id="acr-backto-KubernetesApi" style="stroke:#666666;stroke-width:0.7687687687687688;"/><polygon fill="#666666" points="261.5746,591.6724,268.9897,593.2034,265.3302,590.8538,267.6799,587.1944,261.5746,591.6724" style="stroke:#666666;stroke-width:0.7687687687687688;"/><text fill="#666666" font-family="sans-serif" font-size="9.994" font-weight="bold" lengthAdjust="spacing" textLength="63.8078" x="281.7538" y="569.3247">docker pull</text><text fill="#888888" font-family="sans-serif" font-size="7.6877" lengthAdjust="spacing" textLength="85.3333" x="469.3333" y="664.6014">Kubernetes Plant-UML</text><!--MD5=[866f67fd520036efbf111731697bce45]
+@startuml {filename="voes-arch.svg"}
+footer Kubernetes Plant-UML
+scale max 1024 width
+skinparam linetype polyline
+skinparam nodesep 10
+skinparam ranksep 10
+
+
+
+' Azure
+!define AzurePuml ../md/Azure-PlantUML/dist
+
+!include AzurePuml/AzureCommon.puml
+!include AzurePuml/AzureSimplified.puml
+
+!include AzurePuml/Compute/AzureAppService.puml
+!include AzurePuml/Compute/AzureBatch.puml
+!include AzurePuml/Containers/AzureContainerRegistry.puml
+!include AzurePuml/Containers/AzureKubernetesService.puml
+!include AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
+!include AzurePuml/Databases/AzureCosmosDb.puml
+!include AzurePuml/Databases/AzureSqlDatabase.puml
+!include AzurePuml/DevOps/AzurePipelines.puml
+!include AzurePuml/Identity/AzureActiveDirectory.puml
+!include AzurePuml/Networking/AzureLoadBalancer.puml
+!include AzurePuml/Security/AzureKeyVault.puml
+!include AzurePuml/Storage/AzureBlobStorage.puml
+!include AzurePuml/Storage/AzureStorage.puml
+
+' Kubernetes
+!define KubernetesPuml ../md/kubernetes-PlantUML/dist
+
+!include KubernetesPuml/kubernetes_Context.puml
+!include KubernetesPuml/kubernetes_Simplified.puml
+
+!include KubernetesPuml/OSS/KubernetesApi.puml
+!include KubernetesPuml/OSS/KubernetesIng.puml
+!include KubernetesPuml/OSS/KubernetesPod.puml
+
+actor "DevOps" as devopsAlias
+collections "Client Apps" as clientalias
+collections "Helm Charts" as helmalias
+
+left to right direction
+
+' Azure Components
+AzureActiveDirectory(aad, "\nAzure\nActive Directory", "Global")
+AzureContainerRegistry(acr, "ACR", "Canada Central")
+AzureCosmosDb(cosmos, "\nCosmos DB", "Global")
+AzureKeyVault(keyvault, "\nAzure\nKey Vault", "Global")
+AzureLoadBalancer(alb, "\nLoad\nBalancer", "Canada Central")
+AzureSqlDatabase(sql, "\nExternal\ndata stores", "Canada Central")
+AzurePipelines(ado, "CI/CD\nAzure Pipelines", "Global")
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "K8集群") {
+    KubernetesApi(KubernetesApi, "Kubernetes API", "")
+    
+    Namespace_Boundary(nsFrontEnd, "Front End") {
+        KubernetesIng(ingress, "API Gateway", "")
+    }
+
+    Namespace_Boundary(nsBackEnd, "Back End") {
+        KubernetesPod(KubernetesBE1, "", "")
+        KubernetesPod(KubernetesBE2, "", "")
+        KubernetesPod(KubernetesBE3, "", "")
+    }
+
+    Namespace_Boundary(nsUtil, "Utiliy Services") {
+        KubernetesPod(KubernetesUtil1, "", "")
+        KubernetesPod(KubernetesUtil2, "","")
+    }
+}
+
+Rel(devopsAlias, aad, "认证")
+Rel(helmalias, KubernetesApi, "helm upgrade")
+
+Rel(aad, keyvault, " ")
+Rel(KubernetesApi, aad, "RBAC", "ASYNC")
+
+Rel(clientalias, alb, "HTTP", "ASYNC")
+Rel(alb, ingress, "HTTP", "ASYNC")
+
+Rel(ingress, KubernetesBE1, " ")
+Rel(KubernetesBE1, KubernetesBE2, " ")
+Rel(KubernetesBE1, KubernetesBE3, " ")
+
+Rel(KubernetesBE2, sql, " ")
+Rel(KubernetesBE3, keyvault, "Pod Identity")
+Rel(KubernetesBE3, cosmos, " ")
+
+Rel(ado, acr, "docker push")
+Rel_U(KubernetesApi, acr, "docker pull")
+@enduml
+
+@startuml {filename="voes-arch.svg"}
+footer Kubernetes Plant-UML
+scale max 1024 width
+skinparam linetype polyline
+skinparam nodesep 10
+skinparam ranksep 10
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+
+
+
+
+
+
+
+hide stereotype
+
+
+
+
+
+sprite $AzureAppService [70x70/16z] {
+xTO5WiCm34JHaUG8xd_WCjkkx7PvyygG7mQr10FGI5Wa_dC5RUMkWZRvmPMribQ8fUWR5Iz8v1KNuEqAdL-PQQfI4_NOyuLVheZ7bV5h5Ojx-aA5F1xPVCMZ
+PhCLYnQTgvHeuwcAHvkDLeW0YHxfL5INFS5UiTXnZnu5m7fcfygPOuSzCWw0k-T6FazVXW3gLPRpA58Ce5UXytf9IVLFbXE-sqJI2jsfjzOSuwaOWwSeXhXK
+4wCdrHfAGjWfUdQxTr2CAysnEdPY0W5eVskJ4sFDZK1Yd5PNZRn3gE9fXPXvgJS0ygavsfEw0XxDE9vKG5DxGLqvuyKZeuIaCk7tLMZd_4f9PUxgyETNrifQ
+MIlIfdULqljJxbn9_BtA5W
+}
+
+skinparam rectangle<<AzureAppService>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureBatch [70x65/16z] {
+xTC7Ykn038JXajIfwlxtVT5Cqo0McStXFy0tOrlLg59qF15LRE29z5pbHtdrMhNuh6-NZSzNwB2PrWjAON9b9MokMf4gpIW9NSMOAHrmQM6eMgRGWA0zIxaO
+uBcAbZrJkPZdAPi9c5TBb8iXFAeboXKnLEqTbCaxIdTcoW0cqp9bf0iOXbBd0lnK9cBKQllcOC2bq9UaPggt6LmA0QFahchf0lmlC-2wtuJl9m8CDvMzWA7D
+t5BogwFTKfWe5sFMgiNYe-FgE0DM3KV7rOMhsZiev1s5mLHnZBf2onSG06hANi24wwW3c3SKEk1uA6F-NmZGLLFswJwK3ao9048L9Lz00x1uhPDnrdDbC-RQ
+J02Wf8MpU5BH6ljB1_usbIhrgulzPjSPRoXoH7q1pbFPDVsD9UKiMS1ylj80F5iPrGMSdGjOvGNipWKiYLPSmDcvWFyxbpZELbLH01P_gUBjdfKMK5VaZpVB
+TZOAIca1TON1voYxzrMmL8k_0G
+}
+
+skinparam rectangle<<AzureBatch>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureContainerRegistry [70x60/16z] {
+rPP9mkCe34OHQBx_VRkh24hm82VOgtghVtmM7vASSaOZCNCpuLPk0cm-8VMEGtoFBdlGpw0r2VivkY8Hpr1uA8bg05bKXV5QI7w5JSQMIwh_JkvHJrYvjkOP
+V9gNB9KYK0gW_gO1xwHz2sJveQulo70J_rvK3nP94wngt28ykUveypqCtI6lggXEehGO3pOB0NXwCa54fF6Wot2Zgt1NeU8s8hkqM3ZUtLBZhgM5YCqTijqK
+bggZM_gXu7EGAMjkMT-69S9vMzhdhetWwu8BYxPIvMq1Ty5-a14HN4h28hs99ajSROW4BpP2MBWKFrh8k4sY5XPTiqHFDnbPrqXssLALQXT5rdhB4fi1NwBg
+3oo2K03DdPvONdCjxlBGujrYNooH8DC3omvCB7vXeN6HoEe3iyLQRFF-gYJssLUuisXg-GlNCW5jKhbE5iujHgM3r61IVSudRmjcbZ5ezVKOKyQfheeSHL4J
+zv9OEh1RlChOtOUe2gUMndw62JMOejA_5aWiPFC75qHMorGLIw5pIwpyc82_r1QoOrXwQebb7nOW74-7YYJgmL21PNiNKFVJY48uP0qvuktVw_9CcpAM0lsK
+wbuwSdSpMBmfEcYFzai9K1zReeDui6n9-3SjLPzQWjoYzTfY-fdCr6BkcbY4THeYA1S0knyiYBfP3kKhFJRNDYpL9onMmYyqyu6Q1r720hlvaYXX5OfgOaNU
+0-Hx2ly3
+}
+
+skinparam rectangle<<AzureContainerRegistry>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureKubernetesService [70x70/16z] {
+xPQ7qXiX38HLGHAy__F6cfp6vioazx1_jHT_LtTFy0Vew4WQYE36u0wa6sEtSam7ZJ1P3MfZ3k0qFWEY1oAQ9YNL-Oc8ERea9MNo2OYCK57WeaHuepJmmIO3
+A4fjOK_11bIKKc9GcA0e9VaHb4Cv5Erlb8v9wVf6COAzoAVtzaBnIh3DQ4MfPEnLmGrBoYqgg1d7f9JnQR7Df9Xi0fyK_rJ3261j0Ha8dzJyVYuYsBweNa6g
+exqR-33ulSm6S7sYIgmFf3fjIpNPGBmPYPXH9yaK0I1cg05SbEljbCze3X28gu5ZklRNosu2dGIAijnG3HNiefGK04Y5e2WbnNTAIuhUA6KG_yUKGsbVVTV9
+XZA6yKAfwCTmNYZUhWICphS4O1RAD4dAsa2NaPIR8Lu3n19JzJcHDXE5f87lCmjgr32p5WcWuhP34Hjz_M0bPg2sMS1PAP_gxULSZ8_jRN93pAotgsS-8SmE
+C-Aah6UqnNGdICfdHpBfjZxLwkgYTxu_rJgUcU7FeHoAEowKoW26oKBvP0RKvtZ9aIiMt-O8BaerqwT6iifqvtilLQO5FY_EVjcjfEmNLuG_GaT77m
+}
+
+skinparam rectangle<<AzureKubernetesService>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureDatabaseForPostgreSQL [53x70/16z] {
+xTG9OgCm38LXItfF4hx_WSS3TY6DJJhx-cTF-8hALdvjeYtJbfJNgO4ahf60BQs0n2h29aHFi7JoIEGaj-mBJMSNX0zdNu_aQJoovJssdiOJb5EHxZ6fsVvx
+7oprU6Fa2HRmRT5C6viGTuecfHjlA7azZ2QIC2qZeU-eCIdNH5JLp5HLtlq2zuvQRkLrIlU1XeFU0B4k1ZhRvt-QrT3159quma7Ifp6NpS4I_KT10Bw_9TG0
+qpsiKPXvX5C5K6Q6cqHjRHGiaEjMU-BZ7UnuDPiZhIDhPfIwTJr3yDfBgvUs_iVqWcOhodejR7yXRv7Mnn2rvRX3mGiu1tJU8SQZoMDRu1R1JKs7J04rNcu8
+iwt1yL5Jahb4sq3jZGUpexfLj6_2PWZH4NOTVcvA-_pW33aVKFQFo0E9pr1QHtOWz0s1_Hj_SUmThydnSQl8gZv7o2low2XGcRb2ZdEy_jnNXLGkq9XltoAR
+rL52Kts5RCoNZyUIGRb4OxwjCBMURMA-HEEWC3gAdgioLJCLp15HMs2cUTLX4ksHePoZtFyRk2bhbO52FQYwlkwfmq8QJNr3RW1khx3qzb1L2nq8_FXb-GsP
+Vm7QEf8lGVaLoA8Z_G84Fqn-2N8UYFW2DBQv-1UWL6zaKtmHSbCLfKzGhD4ou2kGblXYX59afMvCYr-4h1p9bAt92F41n4xEnFmMGSiyCNWy8SBUWKy
+}
+
+skinparam rectangle<<AzureDatabaseForPostgreSQL>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureCosmosDb [70x70/16z] {
+dPVRbjim24K10PBu__zjEmfs5DRH6gVxfPtRzk5YMw4tJ5yYwhrtOzfftobyHgAqOVGS7R4Xz6QsnuvNZEagqdf4to96_yOn_KeG4NJJzsHdP2o7qitOB1Bn
+80ptom4jl6BQRyKKns96x98wD1p4gH0nivoKvEzWsWeYuDjzENeacHSZ3als2ELcCmfTPQ-3ppT93ff_8lNOcNhzBalJYyRdEiVLDb2GQ06BHaIZn2x9zPjD
+2-R_Q5IHY5as8GRAaPA5rJpzi-EUIJ98nIzQZH9b1NFdM1L6IUhsMzdkMIJOulQvY7NmYYNsWszepR_JLrTEAP36Sa0xYXfhZf1NxP6xiYDWnEQOQygT4630
+4CqLOmA0UZ3jLO_YA4yiEUnngaUUMlBEOnpbeOLVgzy8mGyjxRLlJgU2AgVvzDmtWDhYbp2MJH72-8L1JP8teHA6lMYWXr-RukStHT4WVYGJR0gq-5b20tKM
+M-mewVbabV-r215vZaSF5YuMAB4SJxFZf3ToRtPQFWtMmhYtNomupqgGCzPytY7CAoL9o_DMo-s3D3zhsdPe4oyMq5vObAHat1B5GGILP5LoNujXZl1pIP8z
+cNnBZ10zOasf0YLuGlbM064irrxtSd2KxQq0B4Y2k-8H0uxf9R4gKGB8-wtGIfIyHlHTubIfPndT9IqR_qIYdoSykrZ3uP4te3Xiokai8vhmTRPN805H1dYx
+jVlil_O5IVWpIgEgKRaFdkl91gUZ9Kf5-6h9M8TyVDoTvGYEQFDwxxHrH7IJkY2whUqaX4Ma_zKc0GiojxKru92x6f9_yE4o_TrRFWHnki6IrC22igtx3k6i
+Yvcl1eTNwKn7M6UycIeUTK8wIn38ssESd-XBKX04qBUFPVsZkMqvHdeVQERzt_QPSYezOX-lvVwpzYoJ7jFkN-PLmbWfCiTp9bEYSJEKliFgL6PNfcyHIlu2
+}
+
+skinparam rectangle<<AzureCosmosDb>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureSqlDatabase [65x70/16z] {
+xTQ7phEw5eJXMVPgC_T_mGTXlaw0wAZl_r59VqErZUziUbGtARAxCkR0OyEB-eiT4_SiMgyn1ovPwWChmzsdRoABElJ4QwcbOlnjp-WZCN3ErXVeXXSikBw1
+K-ltYUNoJquBiROUDoXjnijF0ZVgvNPgHyEbmPSRgeKJ5vpQzNbWQJUS6a7fBh1q-lXHiUb5BKy22xjhqqqjDu4R_xt0ly2_0AkAnxFCusbtyrcWx7E8ps-J
+1O3vA51OGWeSuft0031y8jQNtB6fDmBOK69h0iYrIVFDW2Kb0h2FRNeZuDY5-F6J2O3F0mhil06CbNmle5uRKTXmxOBfUQ0erHuO07njaRyHc1OLs73Fm00O
+zu3DpNq0YqlsVKB5uMaWA75-pQVF0-hCB6h76W1Icpv8OiOy2vpYEfHV68PpEaS3CAc50PXdK-noUn8GQ_ErGBEaMBbMVcNuedi519a3omWotWaKKEg1BvQg
+vm4QIecVNFquC90A_3PL3mE9gSHV8RyBT0p3XiIPvdMW9s1Zpk5od1cAgq02ixKZpbLV10BMOimnF0FdN0CRwaHYa8vh9iUcz1TXvC0T1JQ3-iDH7BZ513P-
+iW53WNjTs4tgfq8I3p2nMEe71mltxDjcZgI-J2XmRnvpoS6BEWoJuvvdKOLlXcVl0IZmJAp2TpQcWOd71PmfuYdYZ6lYeSQfvlyPc2eyOi8vLniUIE459sFW
+XgKIhrX9x6jINlOzwreEu7y
+}
+
+skinparam rectangle<<AzureSqlDatabase>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzurePipelines [70x70/16z] {
+rT5PkXiX34HXm80akFjVRooFb4tAwimvx_r_fIRzv_t_bVhTSjJ8NKabY8YoMapfIkivWbJz1KgHumg_nwuTL-eYO0UK8e10SQKZyUfOIAa8Q6-rrYQszb4f
+0ehKMqsFA1sGNfz9NAcR9R0ceXIylzMr7bKw85gnDoM_LiwTceBIAwOlYjesDQg8tPABqiSsiqFA-355KQ48_xkeS8I_D5Vuc6OVbJbiboo8VbJcj7tI0A7A
+X2clZYTcH464nvMvkKS32XgRAQAKQMbLfXjxX3AdHPdt31gEKARdv24om7WWGX5NvXeOmvGZMbq01QUC1L5VjQcNTA_zAA8rFn1W5WEGSsm8CYE0m12emvJn
+ZdXa23B3soCU3WamY60m19FfYNr6OCYEwRaeHJnnX32IKdA68hCdMajUiGUoC-PiAL9ZI5GfJG018wharhiG9AQSaGkpC-9AxLwpD-EBAoSFcPfFXiYN8qnf
+7gofsHzyPyILT1rMT46EA5Yrcm78GINhl2FU3oeo_Skh4DsIDyYp-QDAMvNu5i9WL67CSOKpNAdF24CLZAw9AvI9AvmvnHJAp9wsVGC
+}
+
+skinparam rectangle<<AzurePipelines>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureActiveDirectory [70x70/16z] {
+fLU9bkCW31imFl__V_V8f7LQwz4Ij3iNl0X7aZt3psVe-NKB4hPFmX4XkoGK_p7sIBh70TeXQIT9UDzWiNZ0ssqIZOHjs9EuQzI8LumTUnAqOK_2-uOz2MyR
+zjmsIW93RjhZoYn-noXA4ZwZuyj6TQ_cagV2gnuB2BArLO-l3povTT4UmzxBMWigPe-nO4-f9K4hBUZNBPzqrBm51mWYCchUWeghd1kbW0GeDZUAGUkDVkoC
+kZs-cv1yhDdlYr9jTFfcGl9v_B-TXoiAHjzdUoIUBE6jgE_jWpr-la6oXDMZR6PFrd-ofDZTPqO98acML8ecHetolisYi0HLlma4oeN5BKcI9MkK25VpN7hp
+s4TnFLdI5Jwi6PvBBnxJXGIpXDLysQl7KhIkB25LJ7bvfESnW0KqgATtZ4QIJse16IEADHP58VEB1AKT08iJFEjdm1mEXopQO5JvTApCwYQLnGbCadCvSshj
+93ZSwfOi5s7P-jilxlucjZDrOe-GHpoJnVhpH1s33Rmannlyu6dwO76-5W2SnzldSsG7YxQQwUoyHBF0FFnlRwISiybxLZyzYiksjI__8XoWLYG9Y1eS13QL
+10K9nLbcaimr9Y0BbWIBCsVHfKiHvxgktN78aRhDuNJuJXokfLXRlv38UoJrrfN4XLaTA0Km3-2Y93Y0Yv9WZP4ag-BiNwXt94cGm-vR5oTdz0uq9Ta1bu44
+y1S
+}
+
+skinparam rectangle<<AzureActiveDirectory>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureLoadBalancer [70x70/16z] {
+fTI7TW8X58JXeNDv__TDvxZ_IQ8EZjrTFZfwa38YPajwAMDz9Ufho4vx7I7Z8s3E4JBdI0mmXqXH1tE82Cmf0kOO8NECa3b6o1mZP6p4PuYibZ-Jz9cKFpF0
+-Cj-6fk121M30KB5O81GkSyGCHGmG0m531130GF4KCW0yHGoH68XqP8-K-TYWWoHMN5lJzefz0iP8YhhaYf9gPJyzOdcA8CX0gL9AbzbeoTnS0I629GXgUqV
+aNUvhO010YLf8vjfKC3q6m9bI6bTCl5RO4e1efHtajGvBLAfEm8J0mWJKBeGCa2OXGmXO09ts4hwQGLkEUrHNs3EHdUb08EPpi_Ez5Iz5OEoCXeJ_0aahWjq
+K1cwb8loQmUKk5G0vjTkh3zpcCLDBI9aFXKoohNL915Pln0mbKiaQQTosYiGChzFp8uJ4m42nZYzWO0n521W30K864CXGiPGY91n52BtcSXtBZpBHDgBpa1-
+CGKNY3p9y0GC0o6JyJyGWz4b1OZ1K05YCEmH48VfkcK2SPX8sgb0F6PkfWGGauagIQal7-4GpuaprcOG82v3v9GXSiuGEMVE4QwJcNGtxm
+}
+
+skinparam rectangle<<AzureLoadBalancer>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureKeyVault [63x70/16z] {
+hPVd0kiW28NBKC3tVz-xRuu9sj1n_dJnoOpMnrxIpIFSb1wlgyKuPFmYh35Ewg-v7bSvrUa-ieBglbVo8Yqhk9w_8s3htLyB7yv3_tncVyczeTQNIaO5HwXf
+HQd7tXuG8_fgrsXHJNjAgY3HMAtfpsUDWVi5nvgTTkqkUVVWDJsaahiFy6U3jgyylekHUJjMfvk-4tvSbiQVJvsY2jVW1j_FlEK9Wi7z4nTfW1ii44jMG-np
+-1G7pRUxJSTgQMSJV9FfQw91S8xCrppwm07tfr2ZiCzd-yDGTwTCu9H905-IosxiF68elirfwis-azt7vNqHR-WKeJXb70mcNEeudYe4GY_WU0GDgPTnr9uS
+JIZZQBOuAbV7wS03DdNySSpAPtZxalV-7lvXwMprlF4VjIsEKSK0vTYsE4PLiSNNSOmgmwYE1pB6sp8kqo-6w8iu49bthYAEjiNyOL0HxvSZCxcdFz8rpkEK
+hk2CgamTJYbFfrO1n_cbCCDwDpYC8uKpx0xdoAboB7dIl-9fnQLbArvvDDPt0mSVKheXwMcGOa1z7O34uhn7-b0qoh2FINPpVJAPL-0MOvPlOuEyDnLHxHQL
+6oNulH1v5dk9xeNE91NwYlfkPLI-zMSvPw2yWCcZ9EcH7MEK2k9c7lXNBpls9m
+}
+
+skinparam rectangle<<AzureKeyVault>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureBlobStorage [70x59/16z] {
+fPVTZiOW24H7L8Hv__VT7zF4PXNRRpttFJ5CIGRynVb8mHELptZ2dkHyWM9Fuoi4EpBVOTXXV4b6JE5R737ErrH4A2zEqXP-GZj9UI1FANl4b7OysYO8oFwq
+JZMOVgpnpG8PWA9B_ceq7cs9_-0Uv5qZOSePYQ6bQ-AqRMqnwzzuQ_vhcJHvMg3POeAkrslwc3G-fJnP3EWM0ve2piMcr6c19aksz6ifgAH0gRzKG9Vh99mi
+5x-MBc15kTo0BjDkBomQM2XZWGuiDbBUMZAq3sTjOHaBjBDKP7f22onzmCaZYvK2vE86Y40OMAWzvT0Y7MSJfEoXXG9XO9c8BGrsQEdaodEB9tXiyLRL-Kjh
+lh4Ke8GMb-l7DW5QO1bR6rWAn1H21xQM300IMHAKJ70l9XjBGqVN5kyFAFtxZSNJr9zcItsoL5oKWxVuilmC2xj5O5jB6PQyj0WA3OaxYmLrOLWK443f8e28
+hImI5DHXeKeI9JrtLXQDolARFGeBbGyBkAFTB3MibtNVubq0ZtkGtLwP9EIUQDvqGqlO8hxhXsDcDKj83aOxfNtMcoi_mKzlYKuvksj6okVjMz0v6x1YWvvS
+90C_I7bGFXljKTeP3yY_3gnl
+}
+
+skinparam rectangle<<AzureBlobStorage>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $AzureStorage [70x60/16z] {
+xTO5iW9138JXqKZV_xvFsU2J36vV6VeZlLjG1FEKqZR1ILhQWjFG8rG-bK-bbGM1xNA55gER3pfSAMdHD-xEa6Hauq5jflAfa1486IWP1TjblkRnqjk2mSr0
+kb6GNUQvxuMTx-K-bQmR7vk0_m-U9ok4GtYkKd1OFRQHsEKEgIk2myGgP-aJnowEqXm-ZmOLKBII5GCbM66CSAnICLP35S6OH7u3UkWF4Swc-R_21uyNXX8f
+VEHzBmKHnQam8dXSQOYfeuegOcHKcLFpeeFiSi6DCN0-pOBpzLJEpsZoDFXQSWayadmrS1O5i7j6HsHrLauXtLavI2ChdxLsJM5opigcdBMoeU3AyslRod7T
+MVaR
+}
+
+skinparam rectangle<<AzureStorage>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+
+
+
+
+
+
+
+skinparam defaultTextAlignment left
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<cluster>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #326CE5
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<namespace>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #FF4216
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #096B24
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<service>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #096B24
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+
+
+
+
+
+
+
+
+hide stereotype
+
+
+
+
+
+sprite $KubernetesApi [70x66/16z] {
+rLU7iYCn20iT_l-7RxOaEyV88UMgNY-MXOJnvlOVGQigw6kE7IcVSrYT-9o7l1hqVOue07kBWxCMy9UDbgmLNWvCQaBm7EqhI1bZUPzdZgL2CJSE7dCuR_nM
+43oHz5mLvjRZ8jHZDENl8D-fJpcge_r7Sp0xH-V19VtC0Up7F8nOS2q4pXWqXkj2zlIsg3GO5W_c4PPoxXtma2mBagubQ3iR2fk20GlodVBWkiYp2vzjuJmS
+D8TTaOjvuDsLE9VwP4mYM-Zkknng4nf3pss9aaTDQkcEZL5u57ENxEBdFvmwU7LS4jeIP_T4rcbhQPRb9NrbJBJeQ1_qNE6oRPpCNaKuqg9Lpt7nkMLSCsDg
+Kce29UlSCWyjfhjBB4XyW0cLnqvqQD7ABBiMqXDZlFMSn_w5CZQR_Oet2HgpcYrKwHitInO_zlUdne1v75Lk6uCzgf1YFANzajTwqNTHl7q3j30OuOQkAdbS
+kNRbaYTZ0fP-0_ScvUjRWHSWDvO-CiXLien9l89OMgGd1B2WmTvwfO7nhxMnx8yDSf4sj7w60rpt4kFUIGcaDC_X11VULilYNzlTq8E2S6pYgjYO7iPxeDXX
+U-tn4qh5GNN5s3ziMtX3WYmxwatWgcbOOQyb83K0nZFdcC8SPIPiPOxZcH-StIkub2jlgRQEPmZALAYszUngotY6e4GpJfPGMyOpD1Pj9nbM56-yFd8MPrDf
+xe9uvWEd1Xf_GimiF52WeD0vdK5ldvxPcuxasp-E7m
+}
+
+skinparam rectangle<<KubernetesApi>> {
+    BackgroundColor KUBERNETES_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesIng [70x66/16z] {
+rPM7ijqm24Gle0B__yE9PvmnrZ4ZfoSdzTsobdOfd_-85X5JVbxZmEt7DNgS_BYEZ5Xetwyn8qZ_BWtrA1YlZJQFYjU1MUoO-YRQ6aTW-rY8DGRFM7ROwNiT
+_0n2bOyaw_MT25M-agwznYL1Y2sDCPxoxUraETZe9x8Mmw8oRWSKZyHa4FvyfUKrZGkNEWijL5XzMamD6gCuNxyxIfp6TDvo1ckBpl128NpOsBIixbGalRJG
+CRVgI2obh7wWLrcSU3KFvktbaMqmTYtyPbsFY6Zf0vQdALp0iCz1sNK5unXhTIlgBL1DjOCvvh3bGhBlQJ3D0EdSxvzGFp38H6rKMB85zBTJSARg8eOwo0xH
+c45zlmLrAVVQ67ehWbOupsS1h53Ht4C73Pi4fQwFuXsjSBv3jrEKI6UW5T8ceKewsq6_eab1ITuaBTWlrQfhzPHIXmE5YgPM03BNixH75V5YfR78BkUWCXUp
+WQzZnAaoRjScuXXJ0fM632fx1tO0IXwB6WznlZp7ITpnRt2JmF8zt2G2oxTmaz3uboh6Zij807Eez6LM0eijDh4dGETPHZErYAQjSQmKpBYZSuY7pA7XI54-
+5GuLE_vkFK87Z2xPgp0UeeygtTAD60zfgxiHRHxkwYOU10MyHuXld4LGm5GxHmLXK3Nj0uW4OJnxUjIuVlvnlW
+}
+
+skinparam rectangle<<KubernetesIng>> {
+    BackgroundColor KUBERNETES_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesPod [70x66/16z] {
+rPTdckCm34CfTjp_m5kdoGuYorld_SxtGW4kj7mY742DNtRye4rk4tZXlcSa3lY-e_20a1sqGSZBGLk3SRammuhITRLNQDkgPTyp2XkGuWlRA95iCcHcu0v9
+-jr4PXA4hIE1aJui6WIzOEcmrzWiBmIZ3uUG2OrQ11DiY9bXsU0Mp9IJ6_SKaN9B5z1fCZCyWIvC18-bH3GQgD1fY0ez_hJvyw1U_ljb9FKFiocFjq-M5rxI
+h53Mvk3XJe7EpqYbpuVnp3AGCbbOCBvbOS7KbeK5Wr-n68bbOI4_jZqB2IRtB2GO_9h5xbZ8aqflMkPW0YU2MhI81O-8auKv0AKMj9yiR1amRW7QPak0eCzN
+bj9tYuEoVD7d-6cnNcyE3KuQqlhA6ZDmdoINqXPDbi8z_iJc8OqRc1p1FY4d1XPeOwRkhEwZUJryYOam3S1K4stcetazVETrHKkxeqUxewHvFRme3q1B2z3K
+F9x8X7FP4l84lNYYklnzvFOnNNLhNWyloWEC8IjgRL5PqnkVLvonTVTm0fnM-S_v2W
+}
+
+skinparam rectangle<<KubernetesPod>> {
+    BackgroundColor KUBERNETES_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+
+actor "DevOps" as devopsAlias
+collections "Client Apps" as clientalias
+collections "Helm Charts" as helmalias
+
+left to right direction
+
+rectangle "<color:#0072C6><$AzureActiveDirectory></color>\n\n==\nAzure\nActive Directory" <<AzureActiveDirectory>> as aad
+rectangle "<color:#0072C6><$AzureContainerRegistry></color>\n\n==ACR" <<AzureContainerRegistry>> as acr
+rectangle "<color:#0072C6><$AzureCosmosDb></color>\n\n==\nCosmos DB" <<AzureCosmosDb>> as cosmos
+rectangle "<color:#0072C6><$AzureKeyVault></color>\n\n==\nAzure\nKey Vault" <<AzureKeyVault>> as keyvault
+rectangle "<color:#0072C6><$AzureLoadBalancer></color>\n\n==\nLoad\nBalancer" <<AzureLoadBalancer>> as alb
+rectangle "<color:#0072C6><$AzureSqlDatabase></color>\n\n==\nExternal\ndata stores" <<AzureSqlDatabase>> as sql
+rectangle "<color:#0072C6><$AzurePipelines></color>\n\n==CI/CD\nAzure Pipelines" <<AzurePipelines>> as ado
+
+rectangle "==K8集群" <<cluster>> as cluster {
+    rectangle "<color:#0072C6><$KubernetesApi></color>\n\n==Kubernetes API" <<KubernetesApi>> as KubernetesApi
+    
+    rectangle "==Front End\n<size:12>[Namespace]</size>" <<namespace>> as nsFrontEnd {
+        rectangle "<color:#0072C6><$KubernetesIng></color>\n\n==API Gateway" <<KubernetesIng>> as ingress
+    }
+
+    rectangle "==Back End\n<size:12>[Namespace]</size>" <<namespace>> as nsBackEnd {
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==" <<KubernetesPod>> as KubernetesBE1
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==" <<KubernetesPod>> as KubernetesBE2
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==" <<KubernetesPod>> as KubernetesBE3
+    }
+
+    rectangle "==Utiliy Services\n<size:12>[Namespace]</size>" <<namespace>> as nsUtil {
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==" <<KubernetesPod>> as KubernetesUtil1
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==" <<KubernetesPod>> as KubernetesUtil2
+    }
+}
+
+devopsAlias - -> aad : "===认证"
+helmalias - -> KubernetesApi : "===helm upgrade"
+
+aad - -> keyvault : "=== "
+KubernetesApi - -> aad : "===RBAC\n//<size:12>[ASYNC]</size>//"
+
+clientalias - -> alb : "===HTTP\n//<size:12>[ASYNC]</size>//"
+alb - -> ingress : "===HTTP\n//<size:12>[ASYNC]</size>//"
+
+ingress - -> KubernetesBE1 : "=== "
+KubernetesBE1 - -> KubernetesBE2 : "=== "
+KubernetesBE1 - -> KubernetesBE3 : "=== "
+
+KubernetesBE2 - -> sql : "=== "
+KubernetesBE3 - -> keyvault : "===Pod Identity"
+KubernetesBE3 - -> cosmos : "=== "
+
+ado - -> acr : "===docker push"
+KubernetesApi -UP-> acr : "===docker pull"
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

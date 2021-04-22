@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage[overlap, CJK]{ruby}
+\renewcommand{\rubysep}{0.01ex}
+
+\usepackage[utf8]{inputenc}
+\usepackage{glossaries}
+
+%\makeglossaries
+\usepackage[nopostdot,nonumberlist]{glossaries}
+\usepackage{glossary-mcols}
+\setglossarystyle{mcolindex}
+
+\newglossary*{EtoJ}{English to Japanese}
+\newglossary*{JtoE}{Japanese to English}
+
+\makenoidxglossaries
+
+
+
+\newglossaryentry{latex}
+{
+    name=latex,
+    description={Is a mark up language specially suited
+    for scientific documents}
+}
+
+\newglossaryentry{maths}
+{
+    name=mathematics,
+    description={Mathematics is what mathematicians do}
+}
+
+\newglossaryentry{formula}
+{
+        name=formula,
+        description={A mathematical expression}
+}
+
+\newacronym{gcd}{GCD}{Greatest Common Divisor}
+
+\newacronym{lcm}{LCM}{Least Common Multiple}
+
+\input{INP-00-glossary}
+
+\title{How to create a glossary}
+\author{ }
+\date{ }
+
+\begin{document}
+\maketitle
+
+The \Gls{latex} typesetting markup language is specially suitable
+for documents that include \gls{maths}.
+
+\clearpage
+
+\gls{ddye}
+
+\gls{kdeac}
+
+\gls{r0}
+
+\gls{formula}
+
+\gls{gcd}
+
+\gls{lcm}
+
+
+\printglossaries
+
+\end{document}

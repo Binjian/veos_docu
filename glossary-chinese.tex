@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{CJKutf8}
+\usepackage[record,style=indexgroup,nomain]{glossaries-extra}
+
+\newglossary*{japanese}{Japanese to English}
+\newglossary*{english}{English to Japanese}
+
+\glsnoexpandfields
+
+\GlsXtrLoadResources[
+   src={defs-nointerpret}, % bib file containing @preamble
+   interpret-preamble=false % write the @preamble contents but don't try to interpret
+]
+
+\GlsXtrLoadResources[
+  src=testcjk,% bib file
+  sort={ja-JP},% locale used to sort primary entries
+  dual-sort={en-GB},% locale used to sort secondary entries
+  type=japanese,% put the primary entries in the 'japanese' glossary
+  dual-type=english,% put the dual entries in the 'english' glossary
+  dual-prefix={en.}
+]
+
+\begin{document}
+
+Japanese: \gls{squareroot}
+
+English: \gls{en.squareroot}
+
+\printunsrtglossaries
+\end{document}
