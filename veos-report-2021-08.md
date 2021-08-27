@@ -2,46 +2,97 @@
 <!-- mainfont='Source Han Sans SC' -->
 <!-- mainfont='Noto Serif CJK SC' -->
  <!-- pandoc veos-report-2021-08.md --pdf-engine=xelatex -o veos-report-2021.08.docx -V mainfont='Source Han Sans SC'  -->
+
 # VEOS by Data Driven Planning
 
 
-测试条件:
+## 测试条件
 
-- 固定测试场景
-- 不开空调(减少空调能耗干扰)
-- 往返路线(减少地形差异干扰)
+-固定测试场景
+-固定工况
+-不开空调(减少空调能耗干扰)
+-往返路线(减少地形差异干扰)
+-观测噪声: 地形,压缩机,电池SOC,(大灯,tbox,...)
+-测量驾驶风格:纵向控制问题中,特定工况下油门踏板(和刹车踏板)的使用情况
+-通过独立的UDP数据记录交叉验证测量和性能
+-总共实验1400次
 
-## 实验结果
+### 驾驶风格
 
-0.驾驶风格比较:
-  - 总分布和KL散度定量
+- 无AI和带AI的基准驾驶风格比较
+  
+|![](veos-report-image/no-ai-driving-style.png){width=200px}|![Driving Style with AI](veos-report-image/ai-driving-style.png){width=200px}|
+|:--:|:--:|
+|<b> 图1.1 无AI的基准风格分布</b>|<b>图1.2 带AI的基准风格总平均分布</b>|
 
-![Driving Style no AI](veos-report-image/no-ai-driving-style.png)
+- 驾驶风格按周期变化: 驾驶风格相对同一个司机是固定的
+  
+|![](veos-report-image/driving-filted.png){width=400px}|
+|:--:|
+|<b>图2 驾驶风格变化按KL散度评估, 风格相对固定</b>|
 
-![Driving Style with AI](veos-report-image/ai-driving-style.png)
+- 驾驶风格有AI和无AI比较
 
- -按周期KL变化
- -default map vs self-made
+|![](veos-report-image/xr-drvingstyle.png){width=200px}|![](veos-report-image/g-drvingstyle.png){width=200px}|
+|:--:|:--:|
+|<b>图3.1 驾驶风格有AI和无AI比较,后面打开coastdown</b>|<b>图3.2 另一位驾驶员有AI与无AI比较</b>|
 
-![Driving Style with AI](veos-report-image/defaultSelfmade_Comp.png)
 
-1.无AI基准: 默认表 vs 手工表
 
-![No AI](veos-report-image/NO-AC.png)
+- 不同驾驶风格与SAC下驾驶风格总体比较:
 
-2.不同驾驶员: 驾驶员 1 vs. 2. vs 3.
+| |SAC|DDPG-CD|SAC-CD|Gonghao-no CD|
+|:--:|:--:|:--:|:--:|:--:|
+|KL-D|0 |0.234|0.311 | 0.334|
+### 能耗
+  - 电动力默认Pedal Map (PM) vs 自建 Pedal Map
+    - 默认PM:高速时请求力矩会降低
+    - 自建PM:分段线性,请求力矩分段线性单调
 
-3.不同初始表
 
-4.历次带AI tensorboard
 
-![AI-comp](veos-report-image/AI-comp.png)
+
+|![](veos-report-image/ep-default-pm.png){width=200px}|![](veos-report-image/self-made-pm.png){width=200px}|
+|:--:|:--:|
+|<b>图4.1 EP默认PM</b>|<b>图4.2 自建PM</b>| |
+
+|![](veos-report-image/defaultSelfmade_Comp.png)|
+|:--:|
+|<b>图5 EP默认PM与自建PM能耗比较, </b>|
+
+ - 具备较强能量回收的pedal map
+
+### 能耗结果
+历次带AI tensorboard
+- 襄阳vs.上海(解决时间同步问题和漏帧问题)
+  - 确认收敛过程
+  - 能耗持续降低过程
+  
+|![襄阳vs.上海](veos-report-image/KWH.png){width=400px}|
+|:--:|
+|<b>图6 SAC算法襄阳和上海对比</b>|
+
+
+- 上海优化改进过程
+  - 能耗持续降低  
+
+|![上海优化](veos-report-image/WH.png)|
+|:--:|
+|<b>图6 上海算法改进过程 </b>|
+
+
+- SAC持续模式
+
+|![](veos-report-image/xr-ai-comp-nof.png){width=200px}|![](veos-report-image/xr-ai-comp-0.6f.png){width=200px}|
+|:--:|:--:|
+|<b>图7.1 驾驶风格有AI和无AI比较,后面打开coastdown</b>|<b>图7.2 另一位驾驶员有AI与无AI比较</b>|
 
 5.(无AI vs.有AI)各50次
 6.有AI持续模式
 7.不同驾驶员带AI优化过程
 8.怠速表关闭/打开
 9.熵变小/策略趋向确定性
+10.DDPG vs. SAC
 
 
 - baselines
@@ -79,21 +130,34 @@ debug
   - **driving style analysis (quantitative)**
     - vehicle interfaces and systems (stable and reliable)
     - synchronization
-    - data logging (for analysis and offline algo)
+  - data logging (for analysis and offline algo)
+  - udp episodic analysis (cross check)
   - energy consumpt cross-check by UDP messages
-  - model resume
-  - udp episodic analysis
+  - model resume tool
+  - different driver storage with resume and from scratch
   - debug (latency analysis)
   - verifying DL algo with cpu only resources
   - analysis
   - optimal motion planning
-  - exploit regen
+  - limiting action space,
+  - exploit regen, activate coastdown part
   - better assistance for manual motion control for eco 
   - reward shaping (penalize braking could be cooperative)
   - need recurrency to encode system dynamics
+  - observing, acting rate, BP rate 
 
-## Theory
+## 方法
+强化学习方法, 以大数据为基础的奖励驱动优化方法
+- **没有模型** 
+  - 车辆动力学的模型和知识
+  - 电机模型
+  - 电源管理系统模型
+- 符合学习直觉:
+  - 利用大数据建立内部模型
+  - 自适应动态过程
+  - 
 
+## 理论分析
 - not like this: big data --> NN --> label ==> good result
 - learn from data (distribution) not label (label is supervision)
   - distribution, law of large number n>30, (multiplicity with samples)
