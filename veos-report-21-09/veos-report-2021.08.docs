@@ -1,0 +1,144 @@
+<!-- pandoc veos-report-2021-08.md --pdf-engine=xelatex -o veos-report-2021.08.pdf -V mainfont='Noto Sans CJK SC' -->
+<!-- mainfont='Source Han Sans SC' -->
+<!-- mainfont='Noto Serif CJK SC' -->
+<h1 id="veos-by-data-driven-planning">VEOS by Data Driven Planning</h1>
+<p>测试条件:</p>
+<ul>
+<li>固定测试场景</li>
+<li>不开空调(减少空调能耗干扰)</li>
+<li>往返路线(减少地形差异干扰)</li>
+</ul>
+<h2 id="实验结果">实验结果</h2>
+<p>0.驾驶风格比较: - 总分布和KL散度定量</p>
+<figure>
+<img src="veos-report-image/no-ai-driving-style.png" alt="Driving Style no AI" /><figcaption aria-hidden="true">Driving Style no AI</figcaption>
+</figure>
+<figure>
+<img src="veos-report-image/ai-driving-style.png" alt="Driving Style with AI" /><figcaption aria-hidden="true">Driving Style with AI</figcaption>
+</figure>
+<p>-按周期KL变化 -default map vs self-made</p>
+<figure>
+<img src="veos-report-image/defaultSelfmade_Comp.png" alt="Driving Style with AI" /><figcaption aria-hidden="true">Driving Style with AI</figcaption>
+</figure>
+<p>1.无AI基准: 默认表 vs 手工表</p>
+<figure>
+<img src="veos-report-image/NO-AC.png" alt="No AI" /><figcaption aria-hidden="true">No AI</figcaption>
+</figure>
+<p>2.不同驾驶员: 驾驶员 1 vs. 2. vs 3.</p>
+<p>3.不同初始表</p>
+<p>4.历次带AI tensorboard</p>
+<figure>
+<img src="veos-report-image/AI-comp.png" alt="AI-comp" /><figcaption aria-hidden="true">AI-comp</figcaption>
+</figure>
+<p>5.(无AI vs.有AI)各50次 6.有AI持续模式 7.不同驾驶员带AI优化过程 8.怠速表关闭/打开 9.熵变小/策略趋向确定性</p>
+<ul>
+<li><p>baselines</p>
+<ul>
+<li>driver styles analysis (analysis)</li>
+<li>pedal map comparison</li>
+<li>A2C</li>
+<li>different initial map</li>
+</ul></li>
+<li><p>Declining in each epoch</p>
+<ul>
+<li>RL agent cooperative / Human driver adapting?</li>
+<li>Epoch tendcy</li>
+<li>declining in total loss / inclining in total reward</li>
+<li>entropy declining / becoming more and more deterministic</li>
+<li>expected wh declining</li>
+<li>seems cooperative, at least no conflict</li>
+<li>baseline: strong regen –&gt; higher efficiency</li>
+<li>methods</li>
+<li>achievements</li>
+<li>status</li>
+</ul></li>
+<li><p>long-term in resume mode (model and table resumed)</p></li>
+<li><p>weak regen (fix coastdown / constrained action space)</p></li>
+<li><p>strong regen (exploit coastdown / relax action space)</p></li>
+</ul>
+<h2 id="analysis">Analysis</h2>
+<p>weaker regen: not stronger regen, but better motion control for the test case</p>
+<ul>
+<li>possible models</li>
+</ul>
+<p>debug</p>
+<ul>
+<li>tools
+<ul>
+<li><strong>driving style analysis (quantitative)</strong>
+<ul>
+<li>vehicle interfaces and systems (stable and reliable)</li>
+<li>synchronization</li>
+<li>data logging (for analysis and offline algo)</li>
+</ul></li>
+<li>energy consumpt cross-check by UDP messages</li>
+<li>model resume</li>
+<li>udp episodic analysis</li>
+<li>debug (latency analysis)</li>
+<li>verifying DL algo with cpu only resources</li>
+<li>analysis</li>
+<li>optimal motion planning</li>
+<li>exploit regen</li>
+<li>better assistance for manual motion control for eco</li>
+<li>reward shaping (penalize braking could be cooperative)</li>
+<li>need recurrency to encode system dynamics</li>
+</ul></li>
+</ul>
+<h2 id="theory">Theory</h2>
+<ul>
+<li>not like this: big data –&gt; NN –&gt; label ==&gt; good result</li>
+<li>learn from data (distribution) not label (label is supervision)
+<ul>
+<li>distribution, law of large number n&gt;30, (multiplicity with samples)</li>
+<li>dynamic environment –&gt; drifting distribution</li>
+<li><strong>advantages</strong>: previously impossible cases can be solved elegantly by big data.</li>
+</ul></li>
+<li>basic observability/controllability
+<ul>
+<li>observation enough? fully observable –&gt; which should I observe?</li>
+<li>control signal sufficient/efficient?</li>
+<li>long-term dependency</li>
+</ul></li>
+<li>Model
+<ul>
+<li>Complete observable model (MDP)</li>
+<li>human driver model <span class="math inline"><em>T</em><em>h</em> = <em>T</em><em>h</em>(<strong>O</strong><sub><strong>h</strong></sub>)</span></li>
+<li>pedal map <span class="math inline">$\tilde{PM}(Th)=Trq$</span></li>
+<li><span class="math inline">$Trq=\tilde{PM}\circ Th=\tilde{PM}(Th(O_h))$</span></li>
+<li><span class="math inline"><strong>O</strong><sub><strong>h</strong></sub> = (<em>v</em><em>e</em><em>l</em>, <em>r</em><em>o</em><em>a</em><em>d</em>, <em>o</em><em>b</em><em>j</em><em>e</em><em>c</em><em>t</em><em>s</em>)</span></li>
+<li>Objective: Optimal Motion Planning
+<ul>
+<li><span class="math inline">min<sub><em>T</em><em>r</em><em>q</em></sub>(<em>Σ</em><sub><em>i</em></sub>(<em>u</em> ⋅ <em>i</em>) ⋅ <em>d</em><em>t</em>)</span>
+<ul>
+<li>follow the optimal motion planning (follow the optimal speed curve)</li>
+<li>reduce unnecessary large torque</li>
+<li>maintain a speed when regenerative brake occurs (exploit regenerative brake)</li>
+</ul></li>
+</ul></li>
+<li>Implementation, POMDP
+<ul>
+<li><span class="math inline"><strong>O</strong><sub><strong>r</strong><strong>l</strong></sub> = (<em>v</em><em>e</em><em>l</em>, <em>T</em><em>h</em>)</span></li>
+<li><span class="math inline"><strong>O</strong><sub><strong>r</strong><strong>l</strong><strong>x</strong></sub> = (<em>v</em><em>e</em><em>l</em>, <em>T</em><em>h</em>, <em>M</em><em>o</em><em>t</em><em>i</em><em>o</em><em>n</em><em>P</em><em>l</em><em>a</em><em>n</em>)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="outlook">Outlook</h2>
+<h3 id="fully-autonomous">fully autonomous</h3>
+<ol type="1">
+<li><p>optimal motion control/prediction</p></li>
+<li><p>exploit regen</p></li>
+</ol>
+<h3 id="assistance-system">assistance system</h3>
+<ol type="1">
+<li><p>fix driving style and analysis</p></li>
+<li><p>different reward</p></li>
+</ol>
+<h3 id="challenge">Challenge</h3>
+<p>动态过程未知，奖励不完全知道，并非简单将数据灌入神经网络,需要考虑几个因素。</p>
+<ul>
+<li>sample efficiency</li>
+<li>offline data utilization</li>
+<li>reward shaping</li>
+<li>memory</li>
+</ul>
+<h3 id="counter-measures">Counter measures</h3>
