@@ -1,5 +1,5 @@
 <!-- pandoc program-en.md --pdf-engine=xelatex -o program-en.pdf -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
-<!-- pandoc program-en.md -o program-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx -->
+<!-- pandoc program-en.md -o program-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx' -->
 <!-- ---
 新能源车最优能效的纵向运动决策
 ... -->
@@ -75,11 +75,10 @@ Students with the following knowledge and skills are encouraged to apply:
 - Basic knowledge in vehicle motion control 
 - System identification
 - Basic knowledge in deep reinforcement learning
-  - Reward shaping
 - Programming skills
   - Working knowledge in Python
   - Tensorflow or Pytorch is a plus
-  - Basic linux 
+  - Basic Linux knowledge
 
 ## Benefit to Students:
 

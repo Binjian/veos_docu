@@ -1,5 +1,5 @@
 <!-- pandoc program2-en.md --pdf-engine=xelatex -o program2-en.pdf -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
-<!-- pandoc program2-en.md -o program2-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx -->
+<!-- pandoc program2-en.md -o program2-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx'y -->
 <!-- ---
 开放仿真环境下能效优化系统的评估和改进
 ... -->
