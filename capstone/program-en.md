@@ -1,76 +1,89 @@
-<!-- pandoc program-en.md --pdf-engine=xelatex -o program-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
+<!-- pandoc program-en.md --pdf-engine=xelatex -o program-en.pdf -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
+<!-- pandoc program-en.md -o program-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx -->
 <!-- ---
 新能源车最优能效的纵向运动决策
 ... -->
 
+<!-- markdownlint-disable-file MD013 -->
 
-# 新能源车最优能效的纵向运动决策
+# Optimal longitudinal motion decision of electric vehicles
 
-## 应用
+<!-- ## Application  -->
 
-电动车能效优化问题
+<!-- Vehicle energy optimization system -->
+## sponsor
 
-## 背景
+- Company sponsor: Charles Huang (CEO) & Jason Fu (CTO), Newrizon
+- Company mentor: Binjian Xin, Newrizon
 
-通过高效的运动规划,在不改变电池储能技术和电源管理系统情况下,可使电动力系统运行在高效的工作区间,从而达到节能和提高续航目的.
 
-在公共道路行驶的车辆,车速规划的主要影响因素有
+## Background
 
-- 环境约束道路限速
-- 车辆本身动力系统加速能力
-- 道路动态目标的约束
-- 驾驶员驾驶风格
+Collaboration between UM-SJTU Joint Institute and Newrizon VerTEx lab.
 
-通常环境约束作为客观条件无法改变的情况下,优化的目标就是如何通过影响驾驶风格来达到节能的目的.传统方法一般是在已知道路环境,车辆模型和道路动态目标检测的结果下假设随机动态模型,用最优控制的方法进行运动规划或运动控制.但是由于最优控制的模型假设必然存在偏差,而且不能充分利用历史数据,往往和预期结果相去甚远.
+- VerTEx proactively joined this program
+- VerTEx will assign dedicated engineer as a mentor
+- Students need to discuss with the mentor on the tasks and deliverables
 
-随着深度学习,特别是深度强化学习的发展, 利用大数据进行无模型控制或者基于大数据模型的动态控制成为重要的研究方向.
+Newrizon VerTEx lab
+- Newrizon AI lab under Intelligent Technical System
+- A dedicated group at Newrizon working on apply artificial intelligence in vehichle energy optimization systems.
 
-### 目标
 
-本项目的目标是把车辆的纵向运动控制看成马尔科夫决策过程(MDP),考察深度强化学习方法在能效最优目标下的最优纵向运动决策.
+Through well programmed motion planning, the electric power train system can run in highly efficient regime so as to save energy and extend the mileage without intrusive changes in th e battery management or energy storage.
 
-### 内容
+The motion planning of vehicles on public roads needs to consider the following factors
 
-1. 搭建仿真环境:
+- speed limit on the road segment
+- acceleration capabilities of ego vehicles
+- dynamic objects emerging on the roads
+- driving style of the operators
 
-- 在仿真环境下设计典型道路限速工况
-- 通过仿真接口得到车辆位置,速度,加速度等观测量
-- 通过仿真接口得到油门踏板和刹车踏板等控制量
+As the first three factors cannot be changed, the goal of the optimization is to investigate how to adjust the motion planning to increase the energy efficiency. The traditional methode will be to apply optimal control or motion planning, under the assumption of a known road environment, vehicle dynamic model and object detection. Nevertheless, the model of the optimal control has inevitably deviation and it cannot exploit the history data, the result doesn't meet the expected performance in most cases.
+
+With the rapid progress of deep learning, in particular deep reinforcement learning, big-data based modelfree methods and dynamic control methods which make use of big data become state of the art in many complex applications.
+
+## Purpose 
+
+This project aims to model the longtitudinal motion control as Markov Decision Process and investigate the optimal longitudinal motion decision with the objective of optimizing the energy efficiency.
+
+
+## Expected Deliverables:
+
+1. Contruct Simulation Environment:
+  - design test cases with typical speed limits in simulation environment
+  - get access of vehicle location, speed, acceleration through simulation interfaces
+  - get access of acceleration and braking pedal
   
-2. 通过仿真实验设计强化学习控制策略
+2. Design algorithms of deep reinforcement learning agent in simulation environment:
+  - Select and design reinforcement learning algorithms and data acquisition interface
+  - Collect data in simulation environment for deep reinforcement training
+  - Improve the adaptability of the deep reinforcement learning agent by taking account of the difference between the simuation environment and real road condition and designing diverse testing conditions in simulation environment
+  - fine tune the training and testing
 
-- 选择和设计强化学习算法和对应数据采集方式
-- 通过仿真收集大量数据进行训练
-- 充分考虑仿真和实际道路的差异,通过仿真工况的多样化提高算法的自适应能力
-- 算法调试
+3. Road test
+  - Port the algorithms developed in the simulation environment on an actual vehicle
+  - road test, applying transfer learning
+  - Conduct road tests
+  - Compare the difference between the simulation environment and the road test. Analyze the result of the transfer learning
 
-3. 道路实验
-
-- 移植仿真的算法到实际车辆上
-- 道路实验,迁移学习
-- 收集道路实验数据
-- 比较仿真和道路实验的差异,分析迁移学习的效果
-
-
-<!-- |![](fig/trained_agent.gif)|
-|:--:|
-|<b>纵向运动规划</b>| -->
 ![](fig/trained_agent.gif)
 
+## Team
 
-## 方法
+Students with the following knowledge and skills are encouraged to apply:
+- Basic knowledge in vehicle motion control 
+- System identification
+- Basic knowledge in deep reinforcement learning
+  - Reward shaping
+- Programming skills
+  - Working knowledge in Python
+  - Tensorflow or Pytorch is a plus
+  - Basic linux 
 
-- 车辆横纵向控制
-- 系统辨识(车辆运动参数识别)
-  - 路阻系数
-  - 车辆最大,最小加速度等
-- 强化学习
-  - 奖励构造(reward shaping)
-  - 迁移学习: sim2real
+## Benefit to Students:
 
-## 平台
-
-- Open AI Gym, Carla
-- 道路实验
-
-
+- Access to most up-to-date electric commercial vehicle platform
+- Learn state of the art deep learning applications in the EV industry 
+- Get in-depth knowledge on deep reinforcement learning
+- Gain experience in a fast-growing startup enterprise 

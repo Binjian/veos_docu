@@ -1,63 +1,80 @@
-<!-- pandoc program2.md --pdf-engine=xelatex -o program2.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
+<!-- pandoc program2-en.md --pdf-engine=xelatex -o program2-en.pdf -V CJKmainfont='Source Han Sans SC' --wrap=preserve -->
+<!-- pandoc program2-en.md -o program2-en.docx -V CJKmainfont='Source Han Sans SC' --wrap=preserve --reference-doc='SAMPLE-proposal.docx -->
 <!-- ---
-新能源车最优能效的纵向运动决策
+开放仿真环境下能效优化系统的评估和改进
 ... -->
 
 
-# 开放仿真环境下能效优化系统的评估和改进
+<!-- markdownlint-disable-file MD013 -->
 
-## 应用
+# Evaluation and improvement of Vehicle energy optimization system in open-ended simulation environment
 
-电动车能效优化问题
+## sponsor
 
-## 背景
+- Company sponsor: Charles Huang (CEO) & Jason Fu (CTO), Newrizon
+- Company mentor: Binjian Xin, Newrizon
 
-能效优化系统是在新能源车系统中,根据车辆运动状态和驾驶员输入进行最优运动规划的系统.由于它是根据自车观测得到驾驶策略,在真正的道路应用前对它在实际道路上运行的性能进行评估,并有针对性地进行改进是必不可少的.这一方面是通过投入大量的人力物力进行实际道路测试来达到,另一方面,利用仿真技术在虚拟的计算平台上模拟典型工况,可以以较低的成本提早发现算法的基本问题,进行改进和验证.
 
-另外,能效系统的设计和测试开发通常基于特定几个少数工况,它在偏离设计工况下的功能和性能也需要进行定量的评估.通过仿真平台接口多样化地设置环境,道路静态或动态参数,就可以验证算法的泛化能力.
+## Background
 
-### 目标
+Collaboration between UM-SJTU Joint Institute and Newrizon VerTEx lab.
 
-本项目的目标是搭建开放环境的仿真系统,随机生成道路曲率等静态属性和道路多目标车辆等动态属性,考察能效优化系统的泛化性能,过拟合特性,安全性能和多智能体行为特性.
+- VerTEx proactively joined this program
+- VerTEx will assign dedicated engineer as a mentor
+- Students need to discuss with the mentor on the tasks and deliverables
 
-### 内容
+Newrizon VerTEx lab
+- Newrizon AI lab under Intelligent Technical System
+- A dedicated group at Newrizon working on apply artificial intelligence in vehichle energy optimization systems.
 
-1. 搭建开放环境的道路仿真系统:
 
-- 可随机生成曲率和拓扑连接关系的道路网络
-- 生成按确定性运动规划的车辆
-- 按基准强化学习智能体生成自动驾驶车辆
-- 在地图上随机孵化两种目标车辆
-- 生成带能效优化系统的自车智能驾驶车辆
+Vehicle energy optimization system (VEOS) is the optimal motion planning system of EV system based on the vehicle motion states and driver input. Since its decision is based on the observation of the ego vehicle, it's necessary to evaluate the function and performance on diverse road conditions and conduct improvements following the evaluation accordingly. The real massive road test is obviously an indispensable way for this purpose, while the application of the simulation technology for typical test scenarios is a convenient and cost-efficient method to early issue discovery and analysis. Furthermore, making use of virtual computing platform, the system can even be improved and validated. 
+
+Besides, the design, development and verification of VEOS are usually based on several test scenarios, its function and performance need to be evaluated when the scenarios deviates from the targeted ones. Through the simulation platform, one can configure diverse road environments, road static or dynamic properties. Thus the designed functions can be validated on its generalization capability.
+
+### Purpose 
+
+This project aims to set up an open-ended simulation environment in which the road topology and geometric properties like road length, curvation, elevation etc. as well as dynamic objects on the road can be configured or pre-programmed. In such environment the generalization capability, overfitting property, safety and multiagent behavior will be investigated and verified as pre-requisite before the feature release in SOP.
+
+### Expected Deliverables 
+
+1. Set up the open-ended road simulation system:
+
+- Generate road network with randomly sampled curvature and connection topology
+- Generate Non-Play-Character object vehicles with pre-programmed motion trajectories
+- Generate autonmous driving object vehicles with pre-trained baseline reinforcement learning agents
+- Spawn object vehicles on the map
+- Spawn ego vehicles with VEOS
   
-2. 通过仿真实验评估能效优化系统的性能指标
+2. Evaluate the function and performance index of VEOS through the simulation platform 
+- Collect data through simulation platform and train the VEOS system
+- Evaluate the generalization capability of VEOS under diverse road conditions
+- Evaluate the safety property for vehicles with VEOS, for example crash, traffic rules impediments
+- Evaluate the competetive and cooperative behavior of the multi-agent system sharing the same VEOS strategy
 
-- 通过仿真收集大量数据进行训练
-- 评估多种道路环境下能效的泛化性能
-- 评估受能效优化系统影响的车辆安全性能,比如碰撞,违反交通规则情况
-- 评估共享控制策略下多智能体的竞争和协作特性
-
-3. 就仿真的评估结果提出改进方法,利用仿真环境对能效优化系统进行改进设计和训练和验证
-
-- 收集仿真数据,分析实验结果
-- 收集小规模道路试验结果,进行比对
+3. Propose improvement of VEOS based on the simulation results. Implement the improvement proposals in the simulation platform by retrain the veos system with validation.
+- collect and analyse the simulation data
+- collect some actual road test result and compare them with simulation results.
 
 |![](fig/panel.jpg){width=400pix}|
 |:--:|
-|<b>开放环境的仿真系统</b>|
+|<b>Open-ended Driving Simuation System</b>|
 
 
-## 方法
+## Team 
 
-- 车辆控制
-- 强化学习
-  - 标准强化学习算法如PPO, SAC等
-  - 多目标协作方法MARL
-
-## 平台
-
-- Open AI Gym, PGDrive
-- Baseline
-- Python
+Students with the following knowledge and skills are encouraged to apply:
+- Vehicle motion control 
+- Basic knowledge in deep reinforcement learning
+- Programming skills
+  - Python
+  - Tensorflow or Pytorch is a plus
+  - Basic Linux knowledge
 
 
+## Benefit to Students:
+
+- Access to most up-to-date electric commercial vehicle platform
+- Learn state of the art deep learning applications in the EV industry 
+- Get in-depth knowledge on deep reinforcement learning
+- Gain experience in a fast-growing startup enterprise 
