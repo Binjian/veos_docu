@@ -6,7 +6,7 @@
 ---
 title: "VEOS系统评估"
 author: "忻斌健"
-date: "2019年9月3日"
+date: "2019年9月15日"
 geometry: margin=2cm
 fontsize: 12pt
 line-height: 1.5
@@ -16,11 +16,11 @@ output:
     toc: yes
     toc_depth: 3
 classoption: a4paper
-language: da
+language: cn
 ---
 <!-- # VEOS系统评估 -->
 
-
+<!-- #+title: VEOS系统评估 -->
 # 测试条件
 
 - 固定测试场景
@@ -111,7 +111,12 @@ language: da
 
 |![上海优化](veos-report-image/WH.png){width=600px}|
 |:--:|
-|<b>图6 上海算法改进过程 </b>|
+|<b>图6.1 上海算法改进过程 </b>|
+
+|![上海持续优化](veos-report-image/WH-new.png){width=600px}|
+|:--:|
+|<b>图6.2 上海算法持续改进过程 </b>|
+
 
 - SAC(Stochastic Actor Critic) Pedal Map非持续模式: 
   - 每个epoch使用上次epoch的模型,
@@ -159,25 +164,38 @@ language: da
 |<b>图10.1 SAC打开coastdown, 原始数据</b>|<b>图10.2 相同数据加平滑滤波</b>|
 
 
-- DDPG 打开Coast Down
+- DDPG-cd打开Coast Down
   - 收敛更快,大约是SAC的一倍
-  - 同样的能耗改善结果,SAC需要约50个episode, DDPG需要大约25个episodes
+  - 同样的能耗改善结果,SAC需要约50个episode, DDPG-cd需要大约25个episodes
 
 |![](veos-report-image/x-ddpg-0.6f.png){width=200px}|![](veos-report-image/d-ai-comp-0.6f.png){width=200px}|
 |:--:|:--:|
 |<b>图11.1 DDPG打开coastdown, 带平滑</b>|<b>图11.2 对照组司机数据,带平滑</b>|
 
-- DDPG Pedal Map变化表
+
+
+- DDPG-ao增加预期车速观测量
+  - 能耗新低<8wh
+  - 收敛更快更稳定
+  - 司机驾驶风格有较大变化
+
+|![](veos-report-image/3comp-0.9f.png){width=200px}|![](veos-report-image/4-driving-style.png){width=200px}|
+|:--:|:--:|
+|<b>图12.1 DDPG增加观测量与前两种方法比较, 带平滑</b>|<b>图12.2 驾驶风格变化,带平滑</b>|
+
+平均驾驶风格比较,以NO-AI数据为基准
+
+| |no-AI|SAC-CD|DDPG-CD|DDPG-ao|
+|:--:|:--:|:--:|:--:|:--:|
+|KLD|0 |0.532|0.323 | 0.530|
+- DDPG Pedal Map变化
   - 随机采样策略现象
   - 对应能量回收的工况,请求负扭矩变大
 
 <!-- ![](veos-report-image/liuddpg_pm_variation_opt.gif) -->
-|![](veos-report-image/liu_ddpg-0-0.png){width=200px}|![](veos-report-image/liu_ddpg-12-10.png){width=200px}|
-|:--:|:--:|
-|<b>图11.1 DDPG打开coastdown, 带平滑</b>|<b>图11.2 对照组司机数据,带平滑</b>|
-
-
-
+|![](veos-report-image/liu_ddpg-0-0.png){width=200px}|![](veos-report-image/liu_ddpg-12-10.png){width=200px}|![](veos-report-image/xin_ddpg-ao-61-10.png){width=200px}|
+|:--:|:--:|:--:|
+|<b>图13.1 初始PM</b>|<b>图13.2 DDPG-cd节能周期典型PM </b>|<b>图13.3 DDPG-ao典型节能周期PM </b>|
 # 方法
 
 强化学习方法, 以大数据为基础的奖励驱动优化方法
@@ -193,9 +211,15 @@ language: da
 
 - 下一步
   - 提高样本使用效率
+    - 增加刹车观测
+    - 奖励成形(reward shaping):增加未完成episode惩罚
     - 增加观测序列编码,有助于利用更长时间序列的观测
     - 增加运动规划预测
-  - 增加数据采集
+  - 增加数据采集与测试
+    - 增加测试场景复杂度
+      - 其他速度曲线场景
+      - 限速作为观测量
+    - 建立公共道路baseline(安亭新镇环路)
     - 使用以大数据为基础的离线强化学习算法
     - 增加测试车辆
   
