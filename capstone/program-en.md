@@ -13,21 +13,21 @@
 <!-- Vehicle energy optimization system -->
 ## sponsor
 
-- Company sponsor: Charles Huang (CEO) & Jason Fu (CTO), Newrizon
-- Company mentor: Binjian Xin, Newrizon
+ - Company sponsor: Charles Huang (CEO) & Jason Fu (CTO), Newrizon
+ - Company mentor: Binjian Xin, Newrizon
 
 
 ## Background
 
 Collaboration between UM-SJTU Joint Institute and Newrizon VerTEx lab.
 
-- VerTEx proactively joined this program
-- VerTEx will assign dedicated engineer as a mentor
-- Students need to discuss with the mentor on the tasks and deliverables
+ - VerTEx proactively joined this program
+ - VerTEx will assign dedicated engineer as a mentor
+ - Students need to discuss with the mentor on the tasks and deliverables
 
 Newrizon VerTEx lab
-- Newrizon AI lab under Intelligent Technical System
-- A dedicated group at Newrizon working on apply artificial intelligence in vehichle energy optimization systems.
+ - Newrizon AI lab under Intelligent Technical System
+ - A dedicated group at Newrizon working on apply artificial intelligence in vehichle energy optimization systems.
 
 
 Through well programmed motion planning, the electric power train system can run in highly efficient regime so as to save energy and extend the mileage without intrusive changes in th e battery management or energy storage.
@@ -72,6 +72,7 @@ This project aims to model the longtitudinal motion control as Markov Decision P
 ## Team
 
 Students with the following knowledge and skills are encouraged to apply:
+
 - Basic knowledge in vehicle motion control 
 - System identification
 - Basic knowledge in deep reinforcement learning

@@ -64,6 +64,7 @@ This project aims to set up an open-ended simulation environment in which the ro
 ## Team 
 
 Students with the following knowledge and skills are encouraged to apply:
+
 - Vehicle motion control 
 - Basic knowledge in deep reinforcement learning
 - Programming skills
