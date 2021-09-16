@@ -185,7 +185,7 @@ toc:
   - 相当于随机策略收敛到一个确定性策略
   - 行动损失由于确定性策略下计算logit值,趋向发散
 
-|![](veos-report-image/SAC-local-optimum.png){width=400px height=300px}|
+|![](veos-report-image/SAC-local-optimum1.png){width=400px height=300px}|
 |:--:|
 |<b>图10 SAC 陷于确定性策略的局部最优,随机策略的熵收敛到0</b>|
 
