@@ -196,6 +196,17 @@ language: cn
 |![](veos-report-image/liu_ddpg-0-0.png){width=200px}|![](veos-report-image/liu_ddpg-12-10.png){width=200px}|![](veos-report-image/xin_ddpg-ao-61-10.png){width=200px}|
 |:--:|:--:|:--:|
 |<b>图13.1 初始PM</b>|<b>图13.2 DDPG-cd节能周期典型PM </b>|<b>图13.3 DDPG-ao典型节能周期PM </b>|
+
+
+PM变化过程
+<!-- blank line -->
+<figure class="video_container">
+  <video width="600" height="600" controls="true" allowfullscreen="false" poster="veos-report-image/xin_ddpg-ao-61-10.png">
+    <source src="veos-report-image/ddpg_pm_variation-fps4-p1.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+
 # 方法
 
 强化学习方法, 以大数据为基础的奖励驱动优化方法
