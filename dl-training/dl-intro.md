@@ -32,7 +32,7 @@ toc:
 <span style="color:#004394; font-size:40pt;">深度学习极简介绍</span>
 ---
 [<span style="color:#004394; font-size:25pt;"> &nbsp; &emsp; 忻斌健</span>](#VEOS系统评估)
-<span style="color:#004394; font-size:25pt;"> 2021年09月29日 </span>
+<span style="color:#004394; font-size:25pt;"> 2021年09月28日 </span>
 
 
 
