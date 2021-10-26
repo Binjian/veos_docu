@@ -1,0 +1,7 @@
+*.pdf
+/dl-training/*.epub
+*.tmp
+*.docx#
+*.doc#
+/veos-report-21-09/veos-report.pptx
+/veos-report-21-09/veos-report-2021-08-27.html
