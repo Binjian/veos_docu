@@ -127,12 +127,36 @@ t<!-- pandoc veos-report-2021-08.md --pdf-engine=xelatex -o veos-report-2021.08.
 
 |![](veos-report-image/x-ddpg-0.6f.png){width=200px}|![](veos-report-image/d-ai-comp-0.6f.png){width=200px}|
 |:--:|:--:|
-|<b>图11.1 DDPG打开coastdown, 带平滑</b>|<b>图11.2 对照组司机数据,带平滑</b>|
+|<b>图11.1 DDPG打开coastdown, 不带平滑</b>|<b>图11.2 对照组司机数据,带平滑</b>|
 
 DDPG Pedal Map变化表
 ![](veos-report-image/liuddpg_pm_variation_opt.gif)
 
+## 比较
+- DDPG打开CoastDown
 
+| |No-AI-AVG|AI-Last-Value|Save Percentage|
+|:--:|:--:|:--:|:--:|
+|路则鹏|11.53 | 11.71| -1.00% | 
+|梁博之|12.87 | 11.43| 11.19% | 
+
+|![](veos-report-image/1st-driver-energy-nof.png){width=200px}|![](veos-report-image/1st-driver-energy-0.6f.png){width=200px}|
+|:--:|:--:|
+|<b>图12.1 路则鹏DDPG打开coastdown, 不带带平滑</b>|<b>图12.2 路则鹏数据,带平滑</b>|
+
+|![](veos-report-image/1st-driver-energy-nof.png){width=200px}|![](veos-report-image/1st-driver-ds.png){width=200px}|
+|:--:|:--:|
+|<b>图13.1 路则鹏DDPG打开coastdown, 不带平滑</b>|<b>图13.2 路则鹏驾驶风格</b>|
+
+
+
+|![](veos-report-image/2nd-driver-energy-nof.png){width=200px}|![](veos-report-image/2nd-driver-energy-0.6f.png){width=200px}|
+|:--:|:--:|
+|<b>图14.1 梁博之DDPG打开coastdown, 不带带平滑</b>|<b>图14.2 梁博之数据,带平滑</b>|
+
+|![](veos-report-image/2nd-driver-energy-nof.png){width=200px}|![](veos-report-image/2nd-driver-ds.png){width=200px}|
+|:--:|:--:|
+|<b>图15.1 梁博之DDPG打开coastdown, 不带平滑</b>|<b>图15.2 梁博之驾驶风格</b>|
 ## 方法
 
 强化学习方法, 以大数据为基础的奖励驱动优化方法
