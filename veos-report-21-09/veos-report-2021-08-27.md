@@ -157,6 +157,10 @@ DDPG Pedal Map变化表
 |![](veos-report-image/2nd-driver-energy-nof.png){width=200px}|![](veos-report-image/2nd-driver-ds.png){width=200px}|
 |:--:|:--:|
 |<b>图15.1 梁博之DDPG打开coastdown, 不带平滑</b>|<b>图15.2 梁博之驾驶风格</b>|
+
+|![](veos-report-image/liang-0.6f.png){width=200px}|![](veos-report-image/liang-ds.png){width=200px}|
+|:--:|:--:|
+|<b>图16.1 梁博之DDPG无预测车速观测量,带平滑</b>|<b>图16.2 梁博之驾驶风格</b>|
 ## 方法
 
 强化学习方法, 以大数据为基础的奖励驱动优化方法
