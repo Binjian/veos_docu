@@ -172,7 +172,7 @@ DDPG Pedal Map变化表
 
 |![上海优化](veos-report-image/anting-a.png){width=600px}|
 |:--:|
-|<b>图17 安亭新镇小环路</b>|
+|<b>图17 安亭新镇小环路a</b>|
 
  - 南安德路-->安勇路-->安智路-->南安德路
  - 1.4公里
@@ -194,10 +194,38 @@ DDPG Pedal Map变化表
  
 ##### 三周总趋势
 
-|![](veos-report-image/12.2-12.23-ai-comp.png){width=200px}|![](veos-report-image/12.2-12.23-ds.png){width=200px}|
+|![](veos-report-image/12.2-12.23-ai-comp.png){width=300px}|![](veos-report-image/12.2-12.23-ds.png){width=300px}|
 |:--:|:--:|
 |<b>图19.1 三周训练能耗变化 </b>|<b>图19.2 三周训练司机驾驶风格变化</b>|
 
+##### 泛化测试
+冻结小环路a上的模型（经验），迁移到小环路b上测试
+ 
+
+|![上海优化](veos-report-image/anting-b.png){width=600px}|
+|:--:|
+|<b>图17 安亭新镇小环路b</b>|
+
+
+|![上海优化](veos-report-image/12.29-TC.png){width=600px}|
+|:--:|
+|<b>图18 泛化驾驶工况记录</b>|
+
+|![](veos-report-image/12.29-ai-comp.png){width=300px}|![](veos-report-image/12.29-ds.png){width=300px}|
+|:--:|:--:|
+|<b>图19.1 三周训练能耗变化 </b>|<b>图19.2 三周训练司机驾驶风格变化</b>|
+
+| |12.29|
+|:--:|:--:|
+|无AI基准能耗|320.5 Wh|
+|AI平均能耗|306.6 Wh|
+|节省能量|20.8 Wh|
+|百分比|6.5%|
+
+好处：
+
+- 不动态更新，不受场景段（episode）约束，模型不会发散
+- 可以离线
 
 ## 方法
 
