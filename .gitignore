@@ -8,3 +8,6 @@
 /patents/patent-template.docx
 /patents/patent_template.doc
 /patents/~$mulation-based-vehicle-controller-optimzation-system.docx
+*.mp4
+/.vscode/
+/*.html
