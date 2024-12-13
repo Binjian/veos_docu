@@ -1,0 +1,133 @@
+@startgantt
+printscale quarterly zoom 2
+
+Project starts the 1st of january 2025
+[软件与算法 MVP1.0] as [TASK1] starts the 1st of january 2025
+' [TASK1] ends the 31st of december 2025
+[TASK1] requires 365 days 
+[TASK1] is colored in Beige/SeaGreen
+-- 仿真  --
+[机械臂，传感器模型与工况仿真环境搭建] as [sim-setup] requires 60 days
+[sim-setup] is colored in Beige/SeaGreen
+[sim-setup] starts at [TASK1]'s start
+[仿真环境测试与训练数据收集] as [sim-test] requires 30 days
+[sim-test] is colored in Beige/SeaGreen
+[sim-test] starts at [sim-setup]'s end
+[机器人设计冻结] as [design] happens at 2025-03-31
+[design] is colored in MediumBlue
+-- 多模态灵巧行走运动规划与机械臂控制 --
+[离策略在线强化学习] as [rl] requires 60 days
+[rl] is colored in Beige/SeaGreen
+[rl] starts at [sim-test]'s end
+-- 深度神经网络模型 --
+[基于双足行走动力学模型] as [dynamics-model] requires 60 days
+[dynamics-model] is colored in Beige/SeaGreen
+[dynamics-model] starts at [sim-test]'s end
+[基于生成模型的策略学习] as [generative-policy] requires 60 days
+[generative-policy] is colored in Beige/SeaGreen
+[generative-policy] starts at [sim-test]'s end
+[模型微调] as [fine-tuning] requires 60 days
+[fine-tuning] is colored in Beige/SeaGreen
+[fine-tuning] starts at [generative-policy]'s end
+-- 感知 --
+[激光与视觉惯导里程计] as [odometry] requires 60 days
+[odometry] is colored in Beige/SeaGreen
+[odometry] starts at [sim-test]'s end
+[自身位姿与全局轨迹估计] as [pose] requires 60 days
+[pose] is colored in Beige/SeaGreen
+[pose] starts at [odometry]'s start
+[局部度量重建] as [local metrics] requires 40 days
+[local metrics] is colored in Beige/SeaGreen
+[local metrics] starts at [pose]'s end
+-- 运动规划 --
+[导航，行为与全局路径规划] as [navigation] requires 120 days
+[navigation] is colored in Beige/SeaGreen
+[navigation] starts at [local metrics]'s end
+[路由与轨迹路径规划] as [trajectory] requires 120 days
+[trajectory] is colored in Beige/SeaGreen
+[trajectory] starts at [local metrics]'s end
+[移动和机械臂的运动控制与执行] as [control] requires 180 days
+[control] is colored in Beige/SeaGreen
+[control] starts at [local metrics]'s end
+
+
+-- 灵巧行走运动规划与机械臂控制 --
+[机器人样件] as [sample] happens at 2025-06-30
+[sample] is colored in MediumBlue
+
+[仿真到现实] as [sim2real] requires 180 days
+[sim2real] is colored in Beige/SeaGreen
+[sim2real] starts at [sample]'s start
+
+[2025工博会] as [pwee] happens at 2025-09-23
+[pwee] lasts 5 days
+[pwee] is colored in Magenta 
+
+' 2025-01-18 to 2025-08-22 are named [Pilot Project]
+' 2025-01-18 to 2025-08-22 are colored in salmon 
+
+[软件与算法 MVP2.0] as [TASK2] starts the 1st of january 2026
+' [TASK2] ends the 31st of may 2026
+[TASK2] requires 180 days
+[TASK2] is colored in BurlyWood/SeaGreen
+[TASK1]->[TASK2]
+-- 感知 --
+[感知嵌入式移植] as [embedded perception] requires 180 days
+[embedded perception] is colored in BurlyWood/SeaGreen
+[embedded perception] starts at [TASK2]'s start
+[三维语义理解] as [sementics] requires 40 days
+[sementics] is colored in BurlyWood/SeaGreen
+[sementics] starts at [TASK2]'s start
+[全局度量重建] as [global metrics] requires 40 days
+[global metrics] is colored in BurlyWood/SeaGreen
+[global metrics] starts at [TASK2]'s start
+[场景图] as [scene] requires 40 days
+[scene] is colored in BurlyWood/SeaGreen
+[scene] starts at [global metrics]'s end
+-- 仿真  --
+[仿真环境扩展] as [sim-extension] requires 60 days
+[sim-extension] is colored in BurlyWood/SeaGreen
+[sim-extension] starts at [TASK2]'s start
+[扩展仿真环境测试] as [sim-extension-test] requires 30 days
+[sim-extension-test] is colored in BurlyWood/SeaGreen
+[sim-extension-test] starts at [sim-extension]'s end
+-- 运动规划 --
+[规控嵌入式移植] as [embedded control] requires 180 days
+[embedded control] is colored in BurlyWood/SeaGreen
+[embedded control] starts at [TASK2]'s start
+[实体路由与轨迹路径规划与测试] as [real-trajectory] requires 30 days
+[real-trajectory] is colored in BurlyWood/SeaGreen
+[real-trajectory] starts at [TASK2]'s start
+[实体机械臂的运动控制与执行] as [real-control] requires 30 days
+[real-control] is colored in BurlyWood/SeaGreen
+[real-control] starts at [TASK2]'s start
+-- 灵巧运动规划与控制 --
+[多任务多形态学习] as [multi-tasking] requires 60 days
+[multi-tasking] is colored in BurlyWood/SeaGreen
+[multi-tasking] starts at [TASK2]'s start
+[场景级仿真到现实] as [sim-scene] requires 60 days
+[sim-scene] is colored in BurlyWood/SeaGreen
+[sim-scene] starts at [TASK2]'s start
+[离策略在线强化学习] requires 60 days
+[control] is colored in Beige/SeaGreen
+[control] starts at [local metrics]'s end
+
+[软件与算法 MVP3.0] as [TASK3] starts the 1st of june 2026
+[TASK3] ends the 15th of june 2027
+[TASK3] is colored in RosyBrown/SeaGreen
+[TASK2]->[TASK3]
+-- 深度神经网络模型 --
+[跨域学习] as [cross-domain] requires 120 days
+[cross-domain] is colored in RosyBrown/SeaGreen
+[cross-domain] starts at [TASK3]'s start
+[高效后期训练] as [post-training] requires 180 days
+[post-training] is colored in RosyBrown/SeaGreen
+[post-training] starts at [TASK3]'s start 
+[常识与可操作性推理] as [common-sense] requires 180 days
+[common-sense] is colored in RosyBrown/SeaGreen
+[common-sense] starts at [TASK3]'s start 
+[多层级策略模型] as [hierarchical] requires 180 days
+[hierarchical] is colored in RosyBrown/SeaGreen
+[hierarchical] starts at [TASK3]'s start 
+
+@endgantt
