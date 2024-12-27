@@ -1,0 +1,31 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  .green {
+    BackgroundColor green
+  }
+  .red {
+    BackgroundColor red
+  }
+  .yellow {
+    BackgroundColor yellow
+  }
+}
+</style>
+ * 开始
+ ** 石头1
+ *** 石头 <<yellow>>
+ *** 剪刀 <<green>>
+ *** 布 <<red>>
+ ** 剪刀1
+ *** 石头 <<red>>
+ *** 剪刀 <<yellow>>
+ *** 布 <<green>>
+ ** 布1
+ *** 石头 <<green>>
+ *** 剪刀 <<red>>
+ *** 布 <<yellow>>
+
+ ' Add dotted line between 石头 and 剪刀
+ 石头1 -.-> 剪刀1
+@endmindmap
