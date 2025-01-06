@@ -11,3 +11,5 @@
 *.mp4
 /.vscode/
 /*.html
+/out/
+/sands/
