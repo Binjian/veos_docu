@@ -1,0 +1,84 @@
+---
+title: Document Object Model
+---
+
+classDiagram
+class Element{
+    string summary
+}
+style Element fill:lime
+
+
+class Figure~Element~{
+    base64 rawdata
+}
+style Element fill:lime
+style Figure fill:lightblue
+Element <|-- Figure
+class Cell {
+    string c
+}
+class Column {
+    List~Cell~ cells
+}
+class Row {
+    List~Column~ cols
+}
+class Table~Element~ {
+    List~Row~ rows
+}
+Cell *-- Column
+Column *-- Row
+Row *-- Table
+Element <|-- Table
+style Table fill:lightblue
+
+
+class Paragraph~Element~{
+    string text
+}
+style Paragraph fill:lightblue
+Element <|-- Paragraph
+
+class Markdown
+style Markdown fill:yellow
+
+class Section~Element~{
+    +string title
+    +Path path
+    +List~Paragraph~ paragraphs
+    +List~Figure~ figures
+    +List~Table~ tables
+    +List~Section~ subsections
+    +init(Markdown md)
+}
+Element <|-- Section
+style Section fill:fuchsia
+
+
+Table *-- Section 
+Figure *-- Section 
+Paragraph *-- Section 
+Section *-- Section 
+
+
+class File~Element~{
+    +string title
+    +Path path
+    +List~Section~ sections
+}
+Element <|-- File
+Section *-- File
+
+
+class Folder~Element~{
+    +string title
+    +Path path
+    +List~File~ files
+    +List~Folder~ subfolders
+    +init(Markdown md)
+}
+Element <|-- Folder
+File *-- Folder
+Folder *-- Folder
+style Folder fill:Coral

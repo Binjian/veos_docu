@@ -1,0 +1,27 @@
+@startmindmap
+top to bottom direction
+*[#lightsalmon] 企业大模型知识库框架
+left side
+**[#khaki] 文档建模(文件模型抽象)
+***[#pink] 文件系统树
+***[#pink] 内容对象树
+***[#pink] 语义树
+***[#pink] 版本树
+**[#khaki] 文档预处理
+***[#plum] 文档清洗
+***[#plum] 跨平台文件转换
+***[#plum] 文件对象化转录(Markdown转录)
+***[#plum] 文件向量化(大语言模型摘要及向量化)
+right side
+**[#khaki] 应用框架搭建
+***[#lightgreen] 数据库搭建
+****[#skyblue] 内容对象数据库
+****[#skyblue] 向量数据库
+***[#lightgreen] HMI前端（Streamlit, Gradio）
+***[#lightgreen] RAG框架集成
+***[#lightgreen] 模型上下文协议(MCP)
+***[#lightgreen] 智能体(Agent)
+**[#khaki] 检索增强生成(RAG)
+***[#aqua] 基于文本相似度检索(内嵌向量)
+***[#aqua] 基于搜索算法检索
+@endmindmap
