@@ -270,7 +270,48 @@ toc:
 
 <!-- slide id="newrizon-id"　style="text-align: left;" class="my-class1 my-class2" -->
 
-# 现场演示
+# 演示
 <div style="text-align:center"><span style="color:blue; font-family:Georgia; font-size:2em;">任何git现场演示？</span></div>
 
 ![picture 0](../images/0acde9f866593ade14567e732f0bba4205045390a7a3265228cda0a4255f7a24.png)  
+
+
+<!-- slide id="newrizon-id"　style="text-align: left;" class="my-class1 my-class2" -->
+
+## 代码块
+
+
+```c  
+#define J1_LIMIT_POS 170.0 #define J1_LIMIT_NEG -170.0
+int check_joint_limit(float current_angle) { 
+    // 检查是否超出运动范围 ±170° 
+    if (current_angle > J1_LIMIT_POS || current_angle < J1_LIMIT_NEG) { 
+    return -1; // 报错：超出限位 
+    } 
+    return 0; // 正常 
+} 
+```
+
+
+## 绘图 
+
+```mermaid
+graph LR
+    subgraph 计算语义
+        text(文本) --> 内嵌
+    end
+    内嵌 --> 语义树
+    subgraph 检索
+        语义树 --> 摘要 --> 对象树
+    end
+    text --> raw[(原始文件)]
+    语义树 --> embedding[(向量数据库)]
+    对象树 --> markdown[(内容对象数据库)]
+```
+
+## 表格
+
+| 转动轴      |   运动范围    |    备注    |
+| :--------- | :----------: | ---------: |
+| J1轴        | ±170°       |   需确认限位 | 
+| J2轴        | -90°/+155°  |   标准配置   |
