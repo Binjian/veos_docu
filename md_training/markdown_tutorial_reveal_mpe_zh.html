@@ -192,21 +192,116 @@ npm install markdownlint-cli
 <li><strong>markdownlint</strong>：检查风格与格式问题</li>
 <li>拼写检查扩展：用于发现错别字</li>
 </ul>
-<h3 id="发布与导出">发布与导出 </h3>
+</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="279" class="slide " data-source-line="279" data-h="15" data-v="0"><h2 id="用-mermaid-在-markdown-中画图">用 Mermaid 在 Markdown 中画图 </h2>
+<p>在支持 Mermaid 的环境里，可以把源码和导出结果并排展示：</p>
+<div class="code-render-row">
+  <div class="code-panel">
+    <pre class="language-text">```mermaid
+flowchart TD
+    A[开始] --&gt; B{是否通过检查?}
+    B -- 是 --&gt; C[继续]
+    B -- 否 --&gt; D[修改后重试]
+```</pre>
+  </div>
+  <div class="render-panel">
+    <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBpZD0ibXktc3ZnIiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgY2xhc3M9ImZsb3djaGFydCIgc3R5bGU9Im1heC13aWR0aDogMjk4cHg7IGJhY2tncm91bmQtY29sb3I6IHdoaXRlOyIgdmlld0JveD0iMCAwIDI5OCA0MDMuODc1IiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgYXJpYS1yb2xlZGVzY3JpcHRpb249ImZsb3djaGFydC12MiI+PHN0eWxlPiNteS1zdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzMzMzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLXNsb3d7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCA1MHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lZGdlLWFuaW1hdGlvbi1mYXN0e3N0cm9rZS1kYXNoYXJyYXk6OSw1IWltcG9ydGFudDtzdHJva2UtZGFzaG9mZnNldDo5MDA7YW5pbWF0aW9uOmRhc2ggMjBzIGxpbmVhciBpbmZpbml0ZTtzdHJva2UtbGluZWNhcDpyb3VuZDt9I215LXN2ZyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNteS1zdmcgLmVycm9yLXRleHR7ZmlsbDojNTUyMjIyO3N0cm9rZTojNTUyMjIyO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1pbnZpc2libGV7c3Ryb2tlLXdpZHRoOjA7ZmlsbDpub25lO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNteS1zdmcgLm1hcmtlcntmaWxsOiMzMzMzMzM7c3Ryb2tlOiMzMzMzMzM7fSNteS1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzMzMzMzMzt9I215LXN2ZyBzdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O30jbXktc3ZnIHB7bWFyZ2luOjA7fSNteS1zdmcgLmxhYmVse2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtjb2xvcjojMzMzO30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMzMzO30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHNwYW57Y29sb3I6IzMzMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFuIHB7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDt9I215LXN2ZyAubGFiZWwgdGV4dCwjbXktc3ZnIHNwYW57ZmlsbDojMzMzO2NvbG9yOiMzMzM7fSNteS1zdmcgLm5vZGUgcmVjdCwjbXktc3ZnIC5ub2RlIGNpcmNsZSwjbXktc3ZnIC5ub2RlIGVsbGlwc2UsI215LXN2ZyAubm9kZSBwb2x5Z29uLCNteS1zdmcgLm5vZGUgcGF0aHtmaWxsOiNFQ0VDRkY7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAucm91Z2gtbm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5ub2RlIC5sYWJlbCB0ZXh0LCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFuY2hvcjptaWRkbGU7fSNteS1zdmcgLm5vZGUgLmthdGV4IHBhdGh7ZmlsbDojMDAwO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsLCNteS1zdmcgLm5vZGUgLmxhYmVsLCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAubm9kZS5jbGlja2FibGV7Y3Vyc29yOnBvaW50ZXI7fSNteS1zdmcgLnJvb3QgLmFuY2hvciBwYXRoe2ZpbGw6IzMzMzMzMyFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjA7c3Ryb2tlOiMzMzMzMzM7fSNteS1zdmcgLmFycm93aGVhZFBhdGh7ZmlsbDojMzMzMzMzO30jbXktc3ZnIC5lZGdlUGF0aCAucGF0aHtzdHJva2U6IzMzMzMzMztzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzMzMzMzMztmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmVkZ2VMYWJlbCBwe2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt9I215LXN2ZyAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO2ZpbGw6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt9I215LXN2ZyAubGFiZWxCa2d7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDIzMiwgMjMyLCAyMzIsIDAuNSk7fSNteS1zdmcgLmNsdXN0ZXIgcmVjdHtmaWxsOiNmZmZmZGU7c3Ryb2tlOiNhYWFhMzM7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuY2x1c3RlciB0ZXh0e2ZpbGw6IzMzMzt9I215LXN2ZyAuY2x1c3RlciBzcGFue2NvbG9yOiMzMzM7fSNteS1zdmcgZGl2Lm1lcm1haWRUb29sdGlwe3Bvc2l0aW9uOmFic29sdXRlO3RleHQtYWxpZ246Y2VudGVyO21heC13aWR0aDoyMDBweDtwYWRkaW5nOjJweDtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjEycHg7YmFja2dyb3VuZDpoc2woODAsIDEwMCUsIDk2LjI3NDUwOTgwMzklKTtib3JkZXI6MXB4IHNvbGlkICNhYWFhMzM7Ym9yZGVyLXJhZGl1czoycHg7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4OjEwMDt9I215LXN2ZyAuZmxvd2NoYXJ0VGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMzMzM7fSNteS1zdmcgcmVjdC50ZXh0e2ZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MDt9I215LXN2ZyAuaWNvbi1zaGFwZSwjbXktc3ZnIC5pbWFnZS1zaGFwZXtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmljb24tc2hhcGUgcCwjbXktc3ZnIC5pbWFnZS1zaGFwZSBwe2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTtwYWRkaW5nOjJweDt9I215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWwgcmVjdCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7ZmlsbDpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO30jbXktc3ZnIC5sYWJlbC1pY29ue2Rpc3BsYXk6aW5saW5lLWJsb2NrO2hlaWdodDoxZW07b3ZlcmZsb3c6dmlzaWJsZTt2ZXJ0aWNhbC1hbGlnbjotMC4xMjVlbTt9I215LXN2ZyAubm9kZSAubGFiZWwtaWNvbiBwYXRoe2ZpbGw6Y3VycmVudENvbG9yO3N0cm9rZTpyZXZlcnQ7c3Ryb2tlLXdpZHRoOnJldmVydDt9I215LXN2ZyAubm9kZSAubmVvLW5vZGV7c3Ryb2tlOiM5MzcwREI7fSNteS1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSByZWN0LCNteS1zdmcgW2RhdGEtbG9vaz0ibmVvIl0uY2x1c3RlciByZWN0LCNteS1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSBwb2x5Z29ue3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I215LXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBhdGh7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIC5vdXRlci1wYXRoe2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I215LXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIC5uZW8tbGluZSBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpub25lO30jbXktc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xle3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I215LXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIGNpcmNsZSAuc3RhdGUtc3RhcnR7ZmlsbDojMDAwMDAwO30jbXktc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLmljb24tc2hhcGUgLmljb257ZmlsbDojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I215LXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29uLW5lbyBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I215LXN2ZyA6cm9vdHstLW1lcm1haWQtZm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO308L3N0eWxlPjxnPjxtYXJrZXIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjUiIHJlZlk9IjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjgiIG1hcmtlckhlaWdodD0iOCIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDAgMCBMIDEwIDUgTCAwIDEwIHoiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludFN0YXJ0IiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI0LjUiIHJlZlk9IjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjgiIG1hcmtlckhlaWdodD0iOCIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDAgNSBMIDEwIDEwIEwgMTAgMCB6IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIvPjwvbWFya2VyPjxtYXJrZXIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQtbWFyZ2luIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDExLjUgMTQiIHJlZlg9IjExLjUiIHJlZlk9IjciIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjEwLjUiIG1hcmtlckhlaWdodD0iMTQiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTSAwIDAgTCAxMS41IDcgTCAwIDE0IHoiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDA7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludFN0YXJ0LW1hcmdpbiIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMS41IDE0IiByZWZYPSIxIiByZWZZPSI3IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMS41IiBtYXJrZXJIZWlnaHQ9IjE0IiBvcmllbnQ9ImF1dG8iPjxwb2x5Z29uIHBvaW50cz0iMCw3IDExLjUsMTQgMTEuNSwwIiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAwOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIvPjwvbWFya2VyPjxtYXJrZXIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlRW5kIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSIxMSIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlckhlaWdodD0iMTEiIG9yaWVudD0iYXV0byI+PGNpcmNsZSBjeD0iNSIgY3k9IjUiIHI9IjUiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jaXJjbGVTdGFydCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iLTEiIHJlZlk9IjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJIZWlnaHQ9IjExIiBvcmllbnQ9ImF1dG8iPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI1IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIvPjwvbWFya2VyPjxtYXJrZXIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlRW5kLW1hcmdpbiIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWT0iNSIgcmVmWD0iMTIuMjUiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjE0IiBtYXJrZXJIZWlnaHQ9IjE0IiBvcmllbnQ9ImF1dG8iPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI1IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAwOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIvPjwvbWFya2VyPjxtYXJrZXIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlU3RhcnQtbWFyZ2luIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSItMiIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTQiIG1hcmtlckhlaWdodD0iMTQiIG9yaWVudD0iYXV0byI+PGNpcmNsZSBjeD0iNSIgY3k9IjUiIHI9IjUiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDA7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc0VuZCIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxMSAxMSIgcmVmWD0iMTIiIHJlZlk9IjUuMiIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlckhlaWdodD0iMTEiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgc3R5bGU9InN0cm9rZS13aWR0aDogMjsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiLz48L21hcmtlcj48bWFya2VyIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNyb3NzU3RhcnQiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTEgMTEiIHJlZlg9Ii0xIiByZWZZPSI1LjIiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJIZWlnaHQ9IjExIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMSwxIGwgOSw5IE0gMTAsMSBsIC05LDkiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc0VuZC1tYXJnaW4iIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiB2aWV3Qm94PSIwIDAgMTUgMTUiIHJlZlg9IjE3LjciIHJlZlk9IjcuNSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXJrZXJXaWR0aD0iMTIiIG1hcmtlckhlaWdodD0iMTIiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTSAxLDEgTCAxNCwxNCBNIDEsMTQgTCAxNCwxIiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyLjU7Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc1N0YXJ0LW1hcmdpbiIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIHZpZXdCb3g9IjAgMCAxNSAxNSIgcmVmWD0iLTMuNSIgcmVmWT0iNy41IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMiIgbWFya2VySGVpZ2h0PSIxMiIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDEsMSBMIDE0LDE0IE0gMSwxNCBMIDE0LDEiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiLz48L21hcmtlcj48ZyBjbGFzcz0icm9vdCI+PGcgY2xhc3M9ImNsdXN0ZXJzIi8+PGcgY2xhc3M9ImVkZ2VQYXRocyI+PHBhdGggZD0iTTEzNyw2MkwxMzcsNjYuMTY3QzEzNyw3MC4zMzMsMTM3LDc4LjY2NywxMzcsODYuMzMzQzEzNyw5NCwxMzcsMTAxLDEzNywxMDQuNUwxMzcsMTA4IiBpZD0ibXktc3ZnLUxfQV9CXzAiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIHN0eWxlPSI7IiBkYXRhLWVkZ2U9InRydWUiIGRhdGEtZXQ9ImVkZ2UiIGRhdGEtaWQ9IkxfQV9CXzAiIGRhdGEtcG9pbnRzPSJXM3NpZUNJNk1UTTNMQ0o1SWpvMk1uMHNleUo0SWpveE16Y3NJbmtpT2pnM2ZTeDdJbmdpT2pFek55d2llU0k2TVRFeWZWMD0iIGRhdGEtbG9vaz0iY2xhc3NpYyIgbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIvPjxwYXRoIGQ9Ik0xMDQuMzE5LDIzNS4xOTRMOTUuOTMyLDI0Ni44MDdDODcuNTQ2LDI1OC40MjEsNzAuNzczLDI4MS42NDgsNjIuMzg2LDI5OC43NjFDNTQsMzE1Ljg3NSw1NCwzMjYuODc1LDU0LDMzMi4zNzVMNTQsMzM3Ljg3NSIgaWQ9Im15LXN2Zy1MX0JfQ18wIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBzdHlsZT0iOyIgZGF0YS1lZGdlPSJ0cnVlIiBkYXRhLWV0PSJlZGdlIiBkYXRhLWlkPSJMX0JfQ18wIiBkYXRhLXBvaW50cz0iVzNzaWVDSTZNVEEwTGpNeE9Ea3hNemM1T0RVME56VXpMQ0o1SWpveU16VXVNVGt6T1RFek56azROVFEzTlROOUxIc2llQ0k2TlRRc0lua2lPak13TkM0NE56VjlMSHNpZUNJNk5UUXNJbmtpT2pNME1TNDROelY5WFE9PSIgZGF0YS1sb29rPSJjbGFzc2ljIiBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIi8+PHBhdGggZD0iTTE2OS42ODEsMjM1LjE5NEwxNzguMDY4LDI0Ni44MDdDMTg2LjQ1NCwyNTguNDIxLDIwMy4yMjcsMjgxLjY0OCwyMTEuNjE0LDI5OC43NjFDMjIwLDMxNS44NzUsMjIwLDMyNi44NzUsMjIwLDMzMi4zNzVMMjIwLDMzNy44NzUiIGlkPSJteS1zdmctTF9CX0RfMCIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgc3R5bGU9IjsiIGRhdGEtZWRnZT0idHJ1ZSIgZGF0YS1ldD0iZWRnZSIgZGF0YS1pZD0iTF9CX0RfMCIgZGF0YS1wb2ludHM9Ilczc2llQ0k2TVRZNUxqWTRNVEE0TmpJd01UUTFNalEzTENKNUlqb3lNelV1TVRrek9URXpOems0TlRRM05UTjlMSHNpZUNJNk1qSXdMQ0o1SWpvek1EUXVPRGMxZlN4N0luZ2lPakl5TUN3aWVTSTZNelF4TGpnM05YMWQiIGRhdGEtbG9vaz0iY2xhc3NpYyIgbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIvPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVscyI+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgY2xhc3M9ImxhYmVsIiBkYXRhLWlkPSJMX0FfQl8wIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSI+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjAiIGhlaWdodD0iMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgY2xhc3M9ImxhYmVsQmtnIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LCAzMDQuODc1KSI+PGcgY2xhc3M9ImxhYmVsIiBkYXRhLWlkPSJMX0JfQ18wIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOCwgLTEyKSI+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjI0Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBjbGFzcz0ibGFiZWxCa2ciIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48cD7mmK88L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyMCwgMzA0Ljg3NSkiPjxnIGNsYXNzPSJsYWJlbCIgZGF0YS1pZD0iTF9CX0RfMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgsIC0xMikiPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIyNCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgY2xhc3M9ImxhYmVsQmtnIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PHA+5ZCmPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGVzIj48ZyBjbGFzcz0ibm9kZSBkZWZhdWx0IiBpZD0ibXktc3ZnLWZsb3djaGFydC1BLTAiIGRhdGEtbG9vaz0iY2xhc3NpYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM3LCAzNSkiPjxyZWN0IGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiIHN0eWxlPSIiIHg9Ii00NiIgeT0iLTI3IiB3aWR0aD0iOTIiIGhlaWdodD0iNTQiLz48ZyBjbGFzcz0ibGFiZWwiIHN0eWxlPSIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNiwgLTEyKSI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIyNCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiPjxwPuW8gOWnizwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9Im15LXN2Zy1mbG93Y2hhcnQtQi0xIiBkYXRhLWxvb2s9ImNsYXNzaWMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNywgMTg5LjkzNzUpIj48cG9seWdvbiBwb2ludHM9Ijc3LjkzNzUsMCAxNTUuODc1LC03Ny45Mzc1IDc3LjkzNzUsLTE1NS44NzUgMCwtNzcuOTM3NSIgY2xhc3M9ImxhYmVsLWNvbnRhaW5lciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc3LjQzNzUsIDc3LjkzNzUpIi8+PGcgY2xhc3M9ImxhYmVsIiBzdHlsZT0iIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAuOTM3NSwgLTEyKSI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIxMDEuODc1IiBoZWlnaHQ9IjI0Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+5piv5ZCm6YCa6L+H5qOA5p+lPzwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9Im15LXN2Zy1mbG93Y2hhcnQtQy0zIiBkYXRhLWxvb2s9ImNsYXNzaWMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LCAzNjguODc1KSI+PHJlY3QgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIgc3R5bGU9IiIgeD0iLTQ2IiB5PSItMjciIHdpZHRoPSI5MiIgaGVpZ2h0PSI1NCIvPjxnIGNsYXNzPSJsYWJlbCIgc3R5bGU9IiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2LCAtMTIpIj48cmVjdC8+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjI0Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+57un57utPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZSBkZWZhdWx0IiBpZD0ibXktc3ZnLWZsb3djaGFydC1ELTUiIGRhdGEtbG9vaz0iY2xhc3NpYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjIwLCAzNjguODc1KSI+PHJlY3QgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIgc3R5bGU9IiIgeD0iLTcwIiB5PSItMjciIHdpZHRoPSIxNDAiIGhlaWdodD0iNTQiLz48ZyBjbGFzcz0ibGFiZWwiIHN0eWxlPSIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00MCwgLTEyKSI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSIyNCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiPjxwPuS/ruaUueWQjumHjeivlTwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjwvZz48L2c+PGRlZnM+PGZpbHRlciBpZD0ibXktc3ZnLWRyb3Atc2hhZG93IiBoZWlnaHQ9IjEzMCUiIHdpZHRoPSIxMzAlIj48ZmVEcm9wU2hhZG93IGR4PSI0IiBkeT0iNCIgc3RkRGV2aWF0aW9uPSIwIiBmbG9vZC1vcGFjaXR5PSIwLjA2IiBmbG9vZC1jb2xvcj0iIzAwMDAwMCIvPjwvZmlsdGVyPjwvZGVmcz48ZGVmcz48ZmlsdGVyIGlkPSJteS1zdmctZHJvcC1zaGFkb3ctc21hbGwiIGhlaWdodD0iMTUwJSIgd2lkdGg9IjE1MCUiPjxmZURyb3BTaGFkb3cgZHg9IjIiIGR5PSIyIiBzdGREZXZpYXRpb249IjAiIGZsb29kLW9wYWNpdHk9IjAuMDYiIGZsb29kLWNvbG9yPSIjMDAwMDAwIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==" alt="Mermaid 流程图示例">
+  </div>
+</div>
+<h3>适合场景</h3>
+<ul>
+<li>流程图</li>
+<li>时序图</li>
+<li>简单关系图</li>
+<li>状态图与甘特图（取决于渲染器支持）</li>
+</ul>
+<h3>提示</h3>
+<p>Mermaid 很适合把“文字流程”快速变成图。</p>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>用 PlantUML 在 Markdown 中画图</h2>
+<p>在 Markdown Preview Enhanced 中，常见写法是 <code>puml</code> 或 <code>plantuml</code> 代码块。</p>
+<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>```plantuml
+@startuml
+Alice -&gt; Bob: 发送消息
+Bob --&gt; Alice: 返回结果
+@enduml
+```
+</code></pre><p class="plantuml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentstyletype="text/css" data-diagram-type="SEQUENCE" height="154px" preserveAspectRatio="none" style="width:128px;height:154px;background:#FFFFFF;" version="1.1" viewBox="0 0 128 154" width="128px" zoomAndPan="magnify"><defs></defs><g><g><title>Alice</title><rect fill="#000000" fill-opacity="0.00000" height="80.7031" width="8" x="23.1724" y="37.6094"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="27" x2="27" y1="37.6094" y2="118.3125"></line></g><g><title>Bob</title><rect fill="#000000" fill-opacity="0.00000" height="80.7031" width="8" x="99.1724" y="37.6094"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="102.7173" x2="102.7173" y1="37.6094" y2="118.3125"></line></g><g class="participant participant-head" data-participant="Alice"><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44.3447" x="5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30.3447" x="12" y="26.5332">Alice</text></g><g class="participant participant-tail" data-participant="Alice"><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44.3447" x="5" y="117.3125"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30.3447" x="12" y="138.8457">Alice</text></g><g class="participant participant-head" data-participant="Bob"><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="38.9102" x="83.7173" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24.9102" x="90.7173" y="26.5332">Bob</text></g><g class="participant participant-tail" data-participant="Bob"><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="38.9102" x="83.7173" y="117.3125"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24.9102" x="90.7173" y="138.8457">Bob</text></g><g class="message" data-participant-1="Alice" data-participant-2="Bob"><polygon fill="#181818" points="91.1724,65.9609,101.1724,69.9609,91.1724,73.9609,95.1724,69.9609" style="stroke:#181818;stroke-width:1;"></polygon><line style="stroke:#181818;stroke-width:1;" x1="27.1724" x2="97.1724" y1="69.9609" y2="69.9609"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="34.1724" y="65.1045">发送消息</text></g><g class="message" data-participant-1="Bob" data-participant-2="Alice"><polygon fill="#181818" points="38.1724,96.3125,28.1724,100.3125,38.1724,104.3125,34.1724,100.3125" style="stroke:#181818;stroke-width:1;"></polygon><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="32.1724" x2="102.1724" y1="100.3125" y2="100.3125"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="44.1724" y="95.4561">返回结果</text></g><!--SRC=[Syp9J4vLqBLJSCfFib9usZ_nPKFZisqTpnhNSm5557I1CeuW9LOAB_PFUJfxtlFTav_DcmC0]--></g></svg></p><h3>适合场景</h3>
+<ul>
+<li>UML 类图</li>
+<li>时序图</li>
+<li>用例图</li>
+<li>活动图</li>
+</ul>
+<h3>实用提醒</h3>
+<ul>
+<li>PlantUML 通常依赖 Java</li>
+<li>安装 Graphviz 后，可生成更多图类型</li>
+</ul>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>用 DOT / Graphviz 在 Markdown 中画图</h2>
+<p>DOT 语法适合表达“节点 + 连线”关系。</p>
+<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>```dot
+ digraph G {
+  rankdir=LR;
+  Client -&gt; API;
+  API -&gt; Database;
+  API -&gt; Cache;
+}
+```
+</code></pre><h3>适合场景</h3>
+<ul>
+<li>依赖关系图</li>
+<li>模块调用图</li>
+<li>简单架构图</li>
+<li>有向图与无向图</li>
+</ul>
+<h3>补充</h3>
+<p>有些环境也支持 <code>viz</code> 作为代码块标识。</p>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>图表写作建议：Mermaid、PlantUML、DOT 怎么选？</h2>
+<h3>选 Mermaid</h3>
+<ul>
+<li>想快速画流程图</li>
+<li>团队成员更偏前端或文档协作</li>
+<li>希望语法上手快</li>
+</ul>
+<h3>选 PlantUML</h3>
+<ul>
+<li>需要更完整的 UML 表达</li>
+<li>面向软件设计说明和工程文档</li>
+</ul>
+<h3>选 DOT / Graphviz</h3>
+<ul>
+<li>重点在“节点关系”和布局控制</li>
+<li>要画依赖图、架构连接图、调用图</li>
+</ul>
+<h3>一条经验</h3>
+<p>先选 <strong>最容易维护</strong> 的方案，不要为了“更复杂”而复杂。</p>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>关于图表渲染与导出的提醒</h2>
+<ul>
+<li>不是所有 Markdown 渲染器都支持 Mermaid、PlantUML、DOT</li>
+<li>同一份 <code>.md</code> 文件，在预览、导出 PDF、导出 Pandoc 时效果可能不同</li>
+<li>团队协作时，最好统一编辑器和预览方式</li>
+<li>重要文档发布前，务必做一次最终环境测试</li>
+</ul>
+<h3>发布与导出</h3>
 <ul>
 <li><strong>Pandoc</strong>：可导出为 HTML、PDF、DOCX 等多种格式</li>
 </ul>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="283" class="slide " data-source-line="283" data-h="15" data-v="0"><h2 id="markdown-方言很重要">Markdown 方言很重要 </h2>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>Markdown 方言很重要</h2>
 <p>并不是每个渲染器都支持完全相同的功能。</p>
-<h3 id="常见示例">常见示例 </h3>
+<h3>常见示例</h3>
 <ul>
 <li><strong>CommonMark</strong>：更标准、更基础的核心行为</li>
 <li><strong>GitHub Flavored Markdown</strong>：增加了表格、任务列表等实用功能</li>
 <li><strong>Pandoc Markdown</strong>：特别适合出版与导出流程</li>
 </ul>
-<h3 id="结论">结论 </h3>
+<h3>结论</h3>
 <p>要在最终使用的环境里测试你的文件。</p>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="298" class="slide " data-source-line="298" data-h="16" data-v="0"><h2 id="常见错误">常见错误 </h2>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>常见错误</h2>
 <ul>
 <li>代码块、列表、引用前后缺少空行</li>
 <li>代码围栏没有正确闭合</li>
@@ -215,19 +310,21 @@ npm install markdownlint-cli
 <li>误以为所有渲染器都支持同样的扩展语法</li>
 <li>段落过长，阅读时难以快速扫描</li>
 </ul>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="309" class="slide " data-source-line="309" data-h="17" data-v="0"><h2 id="小示例把零散笔记整理成可用的-markdown">小示例：把零散笔记整理成可用的 Markdown </h2>
-<h3 id="原始笔记">原始笔记 </h3>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>小示例：把零散笔记整理成可用的 Markdown</h2>
+<h3>原始笔记</h3>
 <pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>meeting notes api changes auth issue fix later docs update
-</code></pre><h3 id="改进后">改进后 </h3>
-<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code># API 会议记录
+</code></pre><h3>改进后</h3>
+<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code># API 会议记录 {#api-会议记录 }
 
-## 行动项
+## 行动项 {#行动项 }
 - 修复认证问题
 - 更新文档
 - 检查部署时间安排
-</code></pre><h3 id="改进效果">改进效果 </h3>
+</code></pre><h3>改进效果</h3>
 <p>第二种写法更容易阅读、审阅和分享。</p>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="333" class="slide " data-source-line="333" data-h="18" data-v="0"><h2 id="立刻就能提升质量的写作规则">立刻就能提升质量的写作规则 </h2>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>立刻就能提升质量的写作规则</h2>
 <ul>
 <li>标题尽量 <strong>简短明确</strong></li>
 <li>段落尽量 <strong>简洁</strong></li>
@@ -237,18 +334,20 @@ npm install markdownlint-cli
 <li>图片要补充替代文字</li>
 <li>分享前先预览</li>
 </ul>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="345" class="slide " data-source-line="345" data-h="19" data-v="0"><h2 id="在-markdown-preview-enhanced-中使用本文件">在 Markdown Preview Enhanced 中使用本文件 </h2>
-<h3 id="幻灯片分隔符">幻灯片分隔符 </h3>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>在 Markdown Preview Enhanced 中使用本文件</h2>
+<h3>幻灯片分隔符</h3>
 <p>本演示文稿使用：</p>
-<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>&lt;!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" --&gt;
-</code></pre><h3 id="演示设置">演示设置 </h3>
+<pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>&lt;span&gt;[CROSSNOTESLIDE]&lt;/span&gt;  
+</code></pre><h3>演示设置</h3>
 <p>通过 YAML front matter 中的以下配置启用：</p>
 <pre data-role="codeBlock" data-info="md" class="language-gfm md"><code>presentation:
   theme: white.css
   transition: slide
-</code></pre><h3 id="实用建议">实用建议 </h3>
+</code></pre><h3>实用建议</h3>
 <p>打开 Markdown Preview Enhanced 的预览，然后切换到演示模式。</p>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="368" class="slide " data-source-line="368" data-h="20" data-v="0"><h2 id="练习">练习 </h2>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>练习</h2>
 <p>创建一个名为 <code>notes.md</code> 的文件，并包含：</p>
 <ul>
 <li>一个标题</li>
@@ -258,7 +357,8 @@ npm install markdownlint-cli
 <li>一个围栏代码块</li>
 </ul>
 <p>然后预览它，并修正所有看起来不对的地方。</p>
-</section><section id="siasun-id" data-background-image="./Horizontal-Sea.jpg" lineno="382" class="slide " data-source-line="382" data-h="21" data-v="0"><h2 id="最后总结">最后总结 </h2>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h2>最后总结</h2>
 <ul>
 <li>Markdown <strong>简单、可移植、实用</strong></li>
 <li>基础语法已经足够覆盖大多数真实场景</li>
@@ -266,7 +366,8 @@ npm install markdownlint-cli
 <li>在目标渲染器里进行预览、检查和测试</li>
 <li>一小套合适的工具就能明显提升文档质量</li>
 </ul>
-<h3 id="谢谢">谢谢 </h3>
+<!-- slide id="siasun-id" data-background-image="./Horizontal-Sea.jpg" -->
+<h3>谢谢</h3>
 <p>欢迎提问</p>
 </section>
       </div>

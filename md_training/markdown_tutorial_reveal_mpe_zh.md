@@ -2,7 +2,7 @@
 @import "siasun.less"
 title: Markdown 基础与写作流程
 presentation:
-  theme: white.css
+  theme: beige.css
   width: 1280
   height: 720
   margin: 0.08
@@ -291,6 +291,14 @@ flowchart TD
 ```
 ````
 
+<!-- <img src="./mermaid-check-flow.svg" alt="Mermaid 流程图示例" /> -->
+```mermaid
+flowchart TD
+    A[开始] --> B{是否通过检查?}
+    B -- 是 --> C[继续]
+    B -- 否 --> D[修改后重试]
+```
+
 ### 适合场景
 
 - 流程图
@@ -315,6 +323,13 @@ Bob --> Alice: 返回结果
 @enduml
 ```
 ````
+
+```plantuml
+@startuml
+Alice -> Bob: 发送消息
+Bob --> Alice: 返回结果
+@enduml
+```
 
 ### 适合场景
 

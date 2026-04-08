@@ -30,6 +30,32 @@
     font-size: 100%;
     vertical-align: baseline; 
   }
+  .code-render-row {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .code-render-row > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .code-panel,
+  .render-panel {
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-sizing: border-box;
+  }
+  .code-panel pre {
+    margin: 0;
+    font-size: 0.7em;
+    line-height: 1.35;
+  }
+  .render-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   
   h1 {
     color: #004394;
